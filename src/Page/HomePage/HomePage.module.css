@@ -1,0 +1,9 @@
+.main{
+    background-image: url("https://e1.pxfuel.com/desktop-wallpaper/999/339/desktop-wallpaper-computer-backgrounds-suhu-computer-science-backgrounds.jpg");
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}

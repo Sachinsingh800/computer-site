@@ -12,11 +12,11 @@
     height: 4rem;
     margin: 0;
     padding: 0;
-    background-color: #333;
+    background-color: #5c5b5b;
     color: #fff;
+    flex-wrap: wrap;
   }
   .logo{
-    height: 2rem;
     position: absolute;
     left: 2%;
   }
@@ -36,11 +36,12 @@
   
   .dropdown_content {
     display: none;
+    list-style: none;
     position: absolute;
     top: 100%;
     left: 0;
     background-color: #333;
-    min-width: 180px;
+    min-width: 150px;
     z-index: 1;
   }
   
@@ -58,5 +59,18 @@
     padding: 10px;
     display: block;
   }
-  
-
+  @media (max-width:1050px) {
+    .nav_links{
+        margin: 0;
+        padding: 0;
+        background-color: red;
+    }
+    .nav_links li a{
+        padding: 0;
+    }
+  }
+  @media (max-width:900px) {
+    .nav_links li a{
+        display: none;
+    }
+  }

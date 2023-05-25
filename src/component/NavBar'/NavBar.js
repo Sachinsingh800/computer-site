@@ -1,12 +1,12 @@
 import React from "react";
 import style from "./NavBar.module.css";
-import logo from "../../Image/book.webp"
+import SlideBar from "../../Atom/SlideBar/SlideBar";
 
 function NavBar() {
   return (
     <nav>
       <ul className={style.nav_links}>
-        <img className={style.logo}  src={logo} alt="logo"/>
+         <span className={style.logo}><SlideBar /></span>
         <li>
           <a href="#">Home</a>
         </li>
