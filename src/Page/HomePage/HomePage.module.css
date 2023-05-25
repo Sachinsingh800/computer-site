@@ -26,3 +26,16 @@
 .expert{
     height: 3rem;
 }
+@media (max-width:700px){
+    .footer{
+        flex-direction: column;
+        height: max-content;
+        height: 40rem;
+    }
+    .main{
+        justify-content: flex-start;
+    }
+    .main h1{
+        margin-top:20rem;
+    }
+}
