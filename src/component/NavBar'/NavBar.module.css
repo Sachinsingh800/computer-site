@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.options_bar{
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    gap: 3rem;
+    background-color: rgb(235, 235, 235);
+    height: 5rem;
+    align-items: center;
+    padding-right: 1rem;
+}
+.options_bar img{
+    height: 2rem;
+    position: absolute;
+    left: 2%;
+}
+
