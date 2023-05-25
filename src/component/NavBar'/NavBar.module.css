@@ -39,14 +39,22 @@
   }
   
   .dropdown_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     display: none;
     list-style: none;
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #333;
+    background-color: #000000;
+    /* border: 1px red solid; */
     min-width: 150px;
-    z-index: 1;
+    z-index: 99;
+    opacity: 0.9;
+    padding-right:1.5rem ;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   }
   
   .dropdown:hover .dropdown_content {
