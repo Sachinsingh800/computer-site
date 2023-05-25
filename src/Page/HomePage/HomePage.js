@@ -1,5 +1,8 @@
 import React from 'react'
 import style from "./HomePage.module.css"
+import expert from "../../Image/expert.gif"
+import course from "../../Image/course.gif"
+
 
 function HomePage() {
   return (
@@ -11,10 +14,12 @@ function HomePage() {
                 <p>Best reviews from our alumni</p>
                 </div>
               <div>
+                <img className={style.expert} src={expert} alt='Expert'/>
                 <h3>Experts Instruction</h3>
                 <p>Certified & experienced Instructor</p>
                 </div>
               <div>
+              <img className={style.expert} src={course} alt='Expert'/>
                 <h3>100+ Courses</h3>
                 <p>Explore a variety of new subjects</p>
                 </div>
