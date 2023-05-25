@@ -14,7 +14,7 @@ function NavBar() {
         <li><a href='#'>Home</a></li>
         <li><a href='#'>About</a></li>
         <li className={style.dropdown}>
-          <a href='#'>Services</a>
+          <a href='#'>Services &#11167;</a>
           <ul className={style.dropdown_content}>
             <li><a href='#'>Service 1</a></li>
             <li><a href='#'>Service 2</a></li>
