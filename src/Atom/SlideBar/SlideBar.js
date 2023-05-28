@@ -1,6 +1,7 @@
 import React ,{ useState} from 'react'
 import "./SlideBar.css"
 import logo from "../../Image/logo.gif"
+import { Link } from 'react-router-dom';
 
 function SlideBar() {
   
@@ -18,6 +19,7 @@ function SlideBar() {
       <h3 onClick={toggleMenu} id='x'>❌</h3>
       <h2>Home</h2>
       <h2>About</h2>
+     <Link to={"/Profile"}><h2>Profile</h2></Link> 
       <h2>Course</h2>
       <h2>Student Zone</h2>
       <h2>Gallery</h2>
