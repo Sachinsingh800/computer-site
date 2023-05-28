@@ -7,11 +7,12 @@
    background-color: black;
 }
 .form{
-    padding: 4rem;
+    padding: 1rem 4rem 1rem 4rem;
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
     backdrop-filter: blur(8px);
     border-radius: 20px;
     background-color: white;
+    margin-top: 3rem;
 }
 .navBar{
     width: 100vw;
@@ -44,4 +45,9 @@
     opacity: 1;
     }
     } 
-  
+    .login{
+        position: absolute;
+        margin-left: 16rem;
+        margin-top: -2rem;
+        color: blue;
+    }

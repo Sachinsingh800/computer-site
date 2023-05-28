@@ -12,6 +12,7 @@ import {
   isValidString,
   isValidPassword,
 } from '../../Regex/Regex';
+import NavBar from '../../component/NavBar\'/NavBar';
 
 function Signup() {
     const [email, setEmail] = useState(" ")
@@ -53,6 +54,7 @@ const navigate = useNavigate()
 
   return (
     <>
+        <NavBar />
     <div className={style.main}>
       
     <Form  className={style.form}>
@@ -87,7 +89,7 @@ const navigate = useNavigate()
         Submit
       </Button>
       <br/>
-      <h6 onClick={NavigateToSignin}>Login</h6>
+      <h6 className={style.login} onClick={NavigateToSignin}>Login</h6>
     </Form>
     </div>
     </>

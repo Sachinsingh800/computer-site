@@ -5,6 +5,7 @@ import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import style from "./Signin.module.css"
 import { useNavigate } from 'react-router-dom';
+import NavBar from '../../component/NavBar\'/NavBar';
 
 
 function Signin() {
@@ -37,10 +38,11 @@ const navigate = useNavigate()
 
   return (
     <>
+     <NavBar />
     <div className={style.main}>
-      
+    
     <Form  className={style.form}>
-     
+   
     <Form.Group>
         <Form.Label>Email address</Form.Label>
         <Form.Control onChange={(e)=>setEmail(e.target.value)} value={email} type="email" placeholder="Enter email" name='email'/>
@@ -63,7 +65,7 @@ const navigate = useNavigate()
         Login
       </Button>
       <br/>
-      <h6 onClick={NavigateToSignup}>Register</h6>
+      <h6 className={style .Regis} onClick={NavigateToSignup}>Register</h6>
     </Form>
     </div>
     </>
