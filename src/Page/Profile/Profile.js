@@ -26,7 +26,7 @@ const Profile = () => {
         <img className={style.Profilebg} src="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2017/02/Photoshop-Replace-Background-Featured.jpg" />
       
       <img className={style.img}
-        src={`http://localhost:8000/api/userImages/${user.userData.image}`}
+        src={`http://localhost:8000/api/userImages/${user?.userData?.image}`}
       />
       <div className={style.ProfileData}>
       <h3>My profile</h3>
@@ -35,19 +35,19 @@ const Profile = () => {
         <li>
             <div className={style.info}>
             <h5>Name</h5>
-            {user.userData.name}
+            {user?.userData?.name}
             </div>
             </li>
         <li>
         <div className={style.info}>
             <h5>Email id</h5>
-            {user.userData.email}
+            {user?.userData?.email}
             </div>
             </li>
         <li>
         <div className={style.info}>
             <h5>Phone No</h5>
-            {user.userData.mobile}
+            {user?.userData?.mobile}
             </div>
           
             </li>
