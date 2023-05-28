@@ -24,7 +24,7 @@ function navigateToProfile(){
       <ul className={style.nav_links}>
          <span className={style.logo}><SlideBar /></span>
         <li>
-          <a href="#">Home</a>
+          <a href="/">Home</a>
         </li>
 
         <li className={style.dropdown}>
