@@ -26,6 +26,11 @@ function SlideBar() {
       <h2>Contact</h2>
       <h2>Download</h2>
       <h2>Faculties</h2>
+      <h2>Accounts</h2>
+      <h2>Mobile</h2>
+      <h2>Payment</h2>
+      <h2>Complaints</h2>
+      <h2>Supports</h2>
      </div>
     </div>
   </div>
