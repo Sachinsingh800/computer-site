@@ -9,7 +9,7 @@ import time from "../../Image/time.gif"
 function HomePage() {
   return (
     <div className={style.main}>
-      <h1>Welcome to Computer World</h1>
+      <h1 className={style.heading}>Welcome to ComputerWorld</h1>
       <div className={style.footer}>
               <div>
               <img className={style.expert} src={most} alt='Most Recommended'/>
