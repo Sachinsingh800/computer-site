@@ -1,8 +1,22 @@
 import React from "react";
 import style from "./NavBar.module.css";
 import SlideBar from "../../Atom/SlideBar/SlideBar";
+import { useNavigate } from "react-router-dom";
 
 function NavBar() {
+  const user=JSON.parse(localStorage.getItem("user"))
+  const navigate = useNavigate()
+
+  
+  function logout(){
+    localStorage.clear()
+    navigate("/Signin")
+  }
+
+
+  function navigateToSignin(){
+    navigate("/Signin")
+  }
   return (
     <nav>
       <ul className={style.nav_links}>
@@ -92,6 +106,19 @@ function NavBar() {
 
         <li>
           <a href="#">Faculties</a>
+        </li>
+        <li>
+       {
+            user ?  
+            <>
+            <img  className={style.userImg}
+              src={`http://localhost:8000/api/userImages/${user.userData.image}`}
+            />
+      <span onClick={logout}>Signout</span> 
+      </>
+      :  <span onClick={navigateToSignin}>Signin</span>
+       }
+  
         </li>
       </ul>
     </nav>
