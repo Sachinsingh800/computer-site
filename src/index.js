@@ -9,6 +9,7 @@ import {
 } from "react-router-dom";
 import Signup from './Page/Signup/Signup';
 import Signin from './Page/Signin/Signin';
+import Profile from './Page/Profile/Profile';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createBrowserRouter([
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
   {
     path: "/Signin",
     element: <Signin />,
+  },
+  {
+    path: "/Profile",
+    element: <Profile />,
   },
 ]);
 root.render(

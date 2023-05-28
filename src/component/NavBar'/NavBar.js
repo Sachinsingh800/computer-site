@@ -13,7 +13,9 @@ function NavBar() {
     navigate("/Signin")
   }
 
-
+function navigateToProfile(){
+  navigate("/Profile")
+}
   function navigateToSignin(){
     navigate("/Signin")
   }
@@ -111,10 +113,21 @@ function NavBar() {
        {
             user ?  
             <>
-            <img  className={style.userImg}
+                 <li className={style.dropdown}>
+                 <img  className={style.userImg}
               src={`http://localhost:8000/api/userImages/${user?.userData?.image}`}
             />
-      <span onClick={logout}>Signout</span> 
+          <ul className={style.dropdown_contents}>
+            <li>
+            <span onClick={navigateToProfile}>Profile</span> 
+            </li>
+            <li>
+            <span onClick={logout}>Signout</span> 
+            </li>
+          </ul>
+        </li>
+         
+  
       </>
       :  <span onClick={navigateToSignin}>Signin</span>
        }
