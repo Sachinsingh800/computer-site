@@ -12,12 +12,12 @@ function SlideBar() {
         };
 
   return (
-    <div>
+    <div className="main">
     <button id='btn' onClick={toggleMenu}><img className="logo"  src={logo} alt="logo"/></button>
     <div className={`menu ${isOpen ? 'open' : ''}`}>
      <div  className='ToggleMenu'>
       <h3 onClick={toggleMenu} id='x'>❌</h3>
-      <h2>Home</h2>
+     <Link to={"/"}><h2>Home</h2></Link> 
       <h2>About</h2>
      <Link to={"/Profile"}><h2>Profile</h2></Link> 
       <h2>Course</h2>

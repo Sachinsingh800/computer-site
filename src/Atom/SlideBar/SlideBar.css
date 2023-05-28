@@ -9,7 +9,7 @@
     z-index: 99;
    
   }
-  
+
   .menu.open {
     left: 0;
   }
@@ -24,8 +24,6 @@
     flex-direction: column;
     gap: 1rem;
     align-items: first baseline;
-    /* padding-left: 1rem; */
-    z-index: 99;
   }
   .ToggleMenu h2{
     width: 300px;
