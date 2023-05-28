@@ -7,7 +7,7 @@ function NavBar() {
   const user=JSON.parse(localStorage.getItem("user"))
   const navigate = useNavigate()
 
-  
+
   function logout(){
     localStorage.clear()
     navigate("/Signin")
@@ -112,7 +112,7 @@ function NavBar() {
             user ?  
             <>
             <img  className={style.userImg}
-              src={`http://localhost:8000/api/userImages/${user.userData.image}`}
+              src={`http://localhost:8000/api/userImages/${user?.userData?.image}`}
             />
       <span onClick={logout}>Signout</span> 
       </>

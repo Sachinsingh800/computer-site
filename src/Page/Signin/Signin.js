@@ -22,11 +22,16 @@ const navigate = useNavigate()
       try{
       const res= await axios.post("http://localhost:8000/api/login",{email,password})
       console.log(res)
-      localStorage.setItem("user",JSON.stringify(res.data))
-      alert(res.data.message)
-      navigate("/")
+   
+      if(res.data.userData.email==email){
+        localStorage.setItem("user",JSON.stringify(res.data))
+        alert(res.data.message)
+        navigate("/")
+      }else{
+        navigate("/Signin")
+      }
       }catch(error){
-       console.log(error.message)
+        alert("wrong password")
       }
     }
 
