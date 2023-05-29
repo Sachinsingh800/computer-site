@@ -28,7 +28,11 @@ function navigateToProfile(){
         </li>
 
         <li className={style.dropdown}>
-          <a href="#">About &#11167;</a>
+          <a href="#">About </a>
+        </li>
+
+        <li className={style.dropdown}>
+          <a href="#">Course <span className={style.character}>	&#11165;</span></a>
           <ul className={style.dropdown_content}>
             <li>
               <a href="#">Service 1</a>
@@ -43,7 +47,7 @@ function navigateToProfile(){
         </li>
 
         <li className={style.dropdown}>
-          <a href="#">Course &#11167;</a>
+          <a href="#">Student Zone <span className={style.character}>	&#11165;</span></a>
           <ul className={style.dropdown_content}>
             <li>
               <a href="#">Service 1</a>
@@ -58,7 +62,7 @@ function navigateToProfile(){
         </li>
 
         <li className={style.dropdown}>
-          <a href="#">Student Zone &#11167;</a>
+          <a href="#">Gallery <span className={style.character}>	&#11165;</span></a>
           <ul className={style.dropdown_content}>
             <li>
               <a href="#">Service 1</a>
@@ -73,22 +77,7 @@ function navigateToProfile(){
         </li>
 
         <li className={style.dropdown}>
-          <a href="#">Gallery &#11167;</a>
-          <ul className={style.dropdown_content}>
-            <li>
-              <a href="#">Service 1</a>
-            </li>
-            <li>
-              <a href="#">Service 2</a>
-            </li>
-            <li>
-              <a href="#">Service 3</a>
-            </li>
-          </ul>
-        </li>
-
-        <li className={style.dropdown}>
-          <a href="#">Contact &#11167;</a>
+          <a href="#">Contact<span className={style.character}>	&#11165;</span></a>
           <ul className={style.dropdown_content}>
             <li>
               <a href="#">Service 1</a>

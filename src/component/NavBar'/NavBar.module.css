@@ -128,3 +128,12 @@
     display: block;
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
   }
+  .character {
+    display: inline-block;
+    transition: transform 0.3s ease;
+  }
+  
+  .dropdown:hover  .character{
+    transform: rotateX(180deg);
+  }
+  
