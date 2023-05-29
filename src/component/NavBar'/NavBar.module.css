@@ -89,15 +89,7 @@
         display: none;
     }
     .dropdown_contents{
-      height: 10rem;
-      font-size: large;
-      display: flex;
-      flex-direction: column;
       padding: 1rem;
-      column-gap: 3rem;
-    }
-    .dropdown_contents li{
-      margin: 1rem;
     }
   }
   .userImg{
@@ -106,6 +98,8 @@
   }
   .dropdown_contents{
     display: flex;
+    height: 10rem;
+    font-size: large;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -120,6 +114,12 @@
     opacity: 0.9;
     padding-right:1.5rem ;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  }
+  .dropdown_contents li{
+    margin: 1rem;
+  }
+  .dropdown_contents li:hover{
+    color: red;
   }
   .dropdown:hover .dropdown_contents {
     display: block;
