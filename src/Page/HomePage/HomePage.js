@@ -10,6 +10,7 @@ function HomePage() {
   return (
     <div className={style.main}>
       <h1 className={style.heading}>Welcome to ComputerWorld</h1>
+      <h1  className={style.headingForMobileView}>Welcome to ComputerWorld</h1>
       <div className={style.footer}>
               <div>
               <img className={style.expert} src={most} alt='Most Recommended'/>

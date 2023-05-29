@@ -52,7 +52,9 @@
     animation: typewriter 4s steps(44) 1s 1 normal both,
       blinkTextCursor 500ms infinite;
 }
-
+.headingForMobileView{
+  display: none;
+}
 
   
 @keyframes typewriter {
@@ -73,7 +75,11 @@
   }
   @media (max-width:700px){
     .heading{
-        font-size: small;
-         top: -8%;
+      display: none;
+    }
+    .headingForMobileView{
+      display: unset;
+      position: absolute;
+      top: -10%;
     }
   }
