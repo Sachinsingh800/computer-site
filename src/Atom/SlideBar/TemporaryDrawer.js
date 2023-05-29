@@ -5,6 +5,21 @@ import Button from '@mui/material/Button';
 import List from '@mui/material/List';
 import Image from "../../Image/logo.gif"
 import { Link } from 'react-router-dom';
+import {FaHome } from 'react-icons/fa';
+import {FcAbout } from 'react-icons/fc';
+import {CgProfile } from 'react-icons/cg';
+import {BiBook } from 'react-icons/bi';
+import {IoIosWoman } from 'react-icons/io';
+import {FcGallery} from 'react-icons/fc';
+import {MdOutlinePermContactCalendar} from 'react-icons/md';
+import {FaCloudDownloadAlt} from 'react-icons/fa';
+import {HiUserGroup} from 'react-icons/hi';
+import {MdOutlineAccountBalanceWallet} from 'react-icons/md';
+import {FaMobileAlt} from 'react-icons/fa';
+import {MdPayment} from 'react-icons/md';
+import {GoIssueReopened} from 'react-icons/go'
+import {BiSupport} from 'react-icons/bi'
+import style from "./TemporaryDrawer.module.css"
 
 export default function TemporaryDrawer() {
   const [state, setState] = React.useState({
@@ -28,21 +43,21 @@ export default function TemporaryDrawer() {
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
-      <List style={{display:"flex",flexDirection:"column",justifyContent:"space-evenly",paddingLeft:"20px",height:"100vh"}}>
-      <Link to={"/"} style={{textDecoration:"none",color:"black"}}><h4>Home</h4></Link> 
-      <h4>About</h4>
-     <Link to={"/Profile"} style={{textDecoration:"none",color:"black"}}><h4>Profile</h4></Link> 
-      <h4>Course</h4>
-      <h4>Student Zone</h4>
-      <h4>Gallery</h4>
-      <h4>Contact</h4>
-      <h4>Download</h4>
-      <h4>Faculties</h4>
-      <h4>Accounts</h4>
-      <h4>Mobile</h4>
-      <h4>Payment</h4>
-      <h4>Complaints</h4>
-      <h4>Supports</h4>
+      <List className={style.opt} style={{display:"flex",flexDirection:"column",justifyContent:"space-evenly",paddingLeft:"20px",height:"100vh"}}>
+      <Link to={"/"} className={style.Link}><h4><FaHome/>Home</h4></Link> 
+      <h4><FcAbout />About</h4>
+     <Link to={"/Profile"} className={style.Link}><h4><CgProfile/>Profile</h4></Link> 
+      <h4><BiBook/>Course</h4>
+      <h4><IoIosWoman/>Student Zone</h4>
+      <h4><FcGallery/>Gallery</h4>
+      <h4><MdOutlinePermContactCalendar/>Contact</h4>
+      <h4><FaCloudDownloadAlt/>Download</h4>
+      <h4><HiUserGroup/>Faculties</h4>
+      <h4><MdOutlineAccountBalanceWallet/>Accounts</h4>
+      <h4><FaMobileAlt/>Mobile</h4>
+      <h4><MdPayment/>Payment</h4>
+      <h4><GoIssueReopened/>Complaints</h4>
+      <h4><BiSupport/>Supports</h4>
       </List>
     </Box>
   );
