@@ -68,7 +68,9 @@
   .dropdown_content li {
     margin: 0;
   }
-  
+  .dropdown_content li a:hover{
+    color: red;
+  }
   .dropdown_content li a {
     color: #fff;
     text-decoration: none;
