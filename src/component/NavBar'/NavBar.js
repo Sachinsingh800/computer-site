@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./NavBar.module.css";
-import SlideBar from "../../Atom/SlideBar/SlideBar";
 import { useNavigate } from "react-router-dom";
+import TemporaryDrawer from "../../Atom/SlideBar/TemporaryDrawer";
 
 function NavBar() {
   const user=JSON.parse(localStorage.getItem("user"))
@@ -22,7 +22,7 @@ function navigateToProfile(){
   return (
     <nav>
       <ul className={style.nav_links}>
-         <span className={style.logo}><SlideBar /></span>
+         <span className={style.logo}><TemporaryDrawer /></span>
         <li>
           <a href="/">Home</a>
         </li>
