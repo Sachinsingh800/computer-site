@@ -28,7 +28,7 @@ export default function TemporaryDrawer() {
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
-      <List style={{display:"flex",flexDirection:"column",justifyContent:"space-evenly",paddingLeft:"20px"}}>
+      <List style={{display:"flex",flexDirection:"column",justifyContent:"space-evenly",paddingLeft:"20px",height:"100vh"}}>
       <Link to={"/"} style={{textDecoration:"none",color:"black"}}><h4>Home</h4></Link> 
       <h4>About</h4>
      <Link to={"/Profile"} style={{textDecoration:"none",color:"black"}}><h4>Profile</h4></Link> 
