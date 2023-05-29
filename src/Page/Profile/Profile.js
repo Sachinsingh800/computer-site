@@ -26,7 +26,7 @@ const Profile = () => {
         <img className={style.Profilebg} src="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2017/02/Photoshop-Replace-Background-Featured.jpg" />
       
       <img className={style.img}
-        src={`http://localhost:8000/api/userImages/${user?.userData?.image}`}
+        src={`https://server-bu32.onrender.com/api/userImages/${user?.userData?.image}`}
       />
       <div className={style.ProfileData}>
       <h3>My profile</h3>

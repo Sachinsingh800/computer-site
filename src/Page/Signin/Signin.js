@@ -21,7 +21,7 @@ const navigate = useNavigate()
     async function submit(e){
       e.preventDefault();
       try{
-      const res= await axios.post("http://localhost:8000/api/login",{email,password})
+      const res= await axios.post("https://server-bu32.onrender.com/api/login",{email,password})
       console.log(res)
    
       if(res.data.userData.email==email){

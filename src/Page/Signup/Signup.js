@@ -43,10 +43,10 @@ const navigate = useNavigate()
       formData.append("mobile",mobile)
       formData.append("password",password)
       try{
-      const res= await axios.post("http://localhost:8000/api/register",formData)
-      console.log(res)
+      const res= await axios.post("https://server-bu32.onrender.com/api/register",formData)
+      console.log(res,"console")
       alert(res.data.message)
-      navigate("/")
+      navigate("/Signin")
       }catch(error){
        console.log(error.message)
       }
