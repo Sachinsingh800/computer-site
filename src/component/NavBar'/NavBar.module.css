@@ -101,7 +101,8 @@
     }
   }
   .userImg{
-    height: 2rem;
+    height: 3rem;
+    border-radius: 50%;
   }
   .dropdown_contents{
     display: flex;
