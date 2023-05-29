@@ -88,6 +88,17 @@
     .nav_links li a{
         display: none;
     }
+    .dropdown_contents{
+      height: 10rem;
+      font-size: large;
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+      column-gap: 3rem;
+    }
+    .dropdown_contents li{
+      margin: 1rem;
+    }
   }
   .userImg{
     height: 2rem;
