@@ -42,6 +42,20 @@ function Javascript() {
             </li>
           </ul>
         </div>
+        <div className={style.box3}>
+           <div>
+            <h1>About this Course</h1>
+            <p>You interact with JavaScript code all the time — you just might not realize it. It powers dynamic behavior on websites (like this one) and plays an important role in many fields, like front- and back-end engineering, game and mobile development, virtual reality, and more. In this course, you’ll learn JavaScript fundamentals that will be helpful as you dive deeper into more advanced topics.</p>
+           </div>
+           <div className={style.innerbox3}>
+            <h1>Skills you'll gain</h1>
+            <ul>
+               <li>Build core programming concepts</li>
+               <li>Learn object-oriented concepts</li>
+               <li>Read and write JavaScript</li>
+            </ul>
+           </div>
+        </div>
     </div>
     </>
   )

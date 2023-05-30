@@ -59,6 +59,20 @@
    margin-top: -2.5rem;
    font-size: 2rem;
  }
+ .box3{
+    color: white;
+    width: 70rem;
+    padding: 3rem;
+    backdrop-filter: blur(15px);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    display: flex;
+ }
+ .box3 div{
+    width: 50%;
+ }
+ .innerbox3{
+    padding-left: 5rem;
+ }
  @media (max-width:800px){
     .box1{
         width: 50rem;
@@ -88,6 +102,17 @@
         margin-top: -2.7rem;
         font-size: 2rem;
       }
+      .box3{
+        flex-direction: column;
+        width: 50rem;
+        gap: 1rem;
+      }
+      .box3 div{
+        width: 100%;
+     }
+     .innerbox3{
+        padding-left: 0rem;
+     }
  }
  @media (max-width:500px){
     .box1{
@@ -103,5 +128,8 @@
         right: 45%;
         margin-top: -2.7rem;
         font-size: 2rem;
+    }
+    .box3{
+        width: 30rem;
     }
  }
