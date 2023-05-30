@@ -5,3 +5,9 @@
 .Caption{
     backdrop-filter: blur(8px);
 }
+@media (max-width:500px){
+    .img{
+        height: 35rem;
+        width: 100vw;
+    }
+}
