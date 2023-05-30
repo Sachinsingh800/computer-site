@@ -88,7 +88,24 @@ export default function StudentForm() {
           </InputGroup>
         </Form.Group>
 
-        <Form.Group as={Col} md="4" controlId="validationCustomUsername">
+        <Form.Group as={Col} md="2" controlId="validationCustomUsername">
+          <Form.Label style={{color:"white"}}>Courses</Form.Label>
+          <InputGroup hasValidation>
+            <select className={style.gender}>
+              <option>
+                Java
+              </option>
+              <option>
+                JavaScript
+              </option>
+              <option>
+                Python
+              </option>
+            </select>
+          </InputGroup>
+        </Form.Group>
+
+        <Form.Group as={Col} md="2" controlId="validationCustomUsername">
           <Form.Label style={{color:"white"}}>DOB</Form.Label>
           <InputGroup hasValidation>
           <Form.Control
