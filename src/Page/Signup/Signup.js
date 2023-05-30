@@ -12,7 +12,7 @@ import {
   isValidString,
   isValidPassword,
 } from '../../Regex/Regex';
-import NavBar from '../../component/NavBar\'/NavBar';
+import NavBar from '../../component/NavBar/NavBar';
 
 function Signup() {
     const [email, setEmail] = useState(" ")

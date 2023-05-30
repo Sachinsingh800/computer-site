@@ -5,7 +5,7 @@ import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import style from "./Signin.module.css"
 import { useNavigate } from 'react-router-dom';
-import NavBar from '../../component/NavBar\'/NavBar';
+import NavBar from '../../component/NavBar/NavBar';
 
 
 function Signin() {

@@ -1,12 +1,11 @@
 import React from 'react'
 import style from "./Javascript.module.css"
-import NavBar from '../NavBar\'/NavBar'
+import NavBar from '../../NavBar/NavBar'
 import { BsBarChartFill } from 'react-icons/bs';
 import { BiTimeFive} from 'react-icons/bi';
 import { TbCertificate} from 'react-icons/tb';
 import { LuBookOpenCheck} from 'react-icons/lu';
-import Image from "../../Image/file.png"
-import Accordian from '../../Atom/SlideBar/Accordian';
+import Accordian from '../../../Atom/SlideBar/Accordian';
 
 function Javascript() {
   return (

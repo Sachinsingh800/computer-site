@@ -1,6 +1,6 @@
 import React  from "react";
 import style from "./Profile.module.css";
-import NavBar from "../../component/NavBar'/NavBar";
+import NavBar from "../../component/NavBar/NavBar";
 import { CgProfile } from 'react-icons/cg';
 import { ImMobile } from 'react-icons/im';
 import { MdPayment } from 'react-icons/md';

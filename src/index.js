@@ -10,9 +10,9 @@ import {
 import Signup from './Page/Signup/Signup';
 import Signin from './Page/Signin/Signin';
 import Profile from './Page/Profile/Profile';
-import Java from './component/Courses/Java';
-import Javascript from './component/Courses/Javascript';
-import Python from './component/Courses/Python';
+import Java from './component/Courses/Java/Java';
+import Javascript from './component/Courses/Javascript/Javascript';
+import Python from './component/Courses/Python/Python';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createBrowserRouter([
