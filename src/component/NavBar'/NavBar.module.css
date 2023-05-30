@@ -19,7 +19,7 @@
     position: fixed;
     width: 100vw;
     padding-right: 1rem;
-  
+    z-index: 500 !important;
   }
   .logo{
     position: absolute;
@@ -58,11 +58,13 @@
     opacity: 0.9;
     padding-right:2rem ;
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    z-index: 500 !important;
   }
   
   .dropdown:hover .dropdown_content {
     display: block;
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    z-index: 500 !important;
   }
   
   .dropdown_content li {
@@ -117,6 +119,7 @@
     opacity: 0.9;
     padding-right:1.5rem ;
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    z-index: 500 !important;
   }
   .dropdown_contents li{
     margin: 1rem;
@@ -127,6 +130,7 @@
   .dropdown:hover .dropdown_contents {
     display: block;
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    z-index: 500 !important;
   }
   .character {
     display: inline-block;

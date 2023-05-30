@@ -47,7 +47,7 @@ export default function TemporaryDrawer() {
       <Link to={"/"} className={style.Link}><h4><FaHome/>Home</h4></Link> 
       <h4><FcAbout />About</h4>
      <Link to={"/Profile"} className={style.Link}><h4><CgProfile/>Profile</h4></Link> 
-      <h4><BiBook/>Course</h4>
+     <Link to={"/Javascript"} className={style.Link}> <h4><BiBook/>Course</h4></Link> 
       <h4><IoIosWoman/>Student Zone</h4>
       <h4><FcGallery/>Gallery</h4>
       <h4><MdOutlinePermContactCalendar/>Contact</h4>
