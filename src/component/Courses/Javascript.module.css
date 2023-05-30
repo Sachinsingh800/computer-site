@@ -1,6 +1,6 @@
 .main{
     padding-top: 7rem;
-    background-image: url("https://e1.pxfuel.com/desktop-wallpaper/999/339/desktop-wallpaper-computer-backgrounds-suhu-computer-science-backgrounds.jpg");
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/922/804/907/light-laptop-notebook-lighting-wallpaper-preview.jpg");
     background-size: cover;
     height: max-content;
     display: flex;
@@ -8,6 +8,9 @@
     align-items: center;
     gap: 5rem;
     justify-content: center;
+}
+.img{
+    height: 2rem;
 }
 .box1{
    color: white;
@@ -51,7 +54,7 @@
  }
  .box2 ul li p{
    position: absolute;
-   top: 15%;
+   top: 25%;
  }
  .box2 ul li span{
    position: absolute;
