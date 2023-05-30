@@ -7,7 +7,11 @@ import { TbCertificate} from 'react-icons/tb';
 import { LuBookOpenCheck} from 'react-icons/lu';
 import Accordian from '../../../Atom/SlideBar/Accordian';
 
+
 function Javascript() {
+  function navigate(){
+    window.open("/Form")
+  }
   return (
     <>     
        <NavBar/>
@@ -17,7 +21,7 @@ function Javascript() {
         <h1> Learn JavaScript</h1>
         <p>Learn how to use JavaScript - a powerful and flexible programmimg language for adding website interactivity</p>
         <h6>4.5 <span>⭐⭐⭐⭐⭐</span></h6>
-        <button>Start</button>
+        <button onClick={navigate}>Start</button>
         </div>
         <div className={style.box2}>
           <ul>

@@ -13,6 +13,7 @@ import Profile from './Page/Profile/Profile';
 import Java from './component/Courses/Java/Java';
 import Javascript from './component/Courses/Javascript/Javascript';
 import Python from './component/Courses/Python/Python';
+import StudentForm from './component/StudentForm/StudentForm';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createBrowserRouter([
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
   {
     path: "/Python",
     element: <Python />,
+  },
+  {
+    path: "/Form",
+    element: <StudentForm />,
   },
 ]);
 root.render(

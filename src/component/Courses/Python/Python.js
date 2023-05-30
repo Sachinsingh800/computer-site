@@ -15,7 +15,7 @@ function Python() {
         <div className={style.box1}>
             <p>Course</p>
         <h1> Learn Python</h1>
-        <p>Learn how to use Python- a powerful and flexible programmimg language for adding website interactivity</p>
+        <p>Learn how to use Python- Python is the second best language for any job, and the best language for every job you hate</p>
         <h6>4.5 <span>⭐⭐⭐⭐⭐</span></h6>
         <button>Start</button>
         </div>

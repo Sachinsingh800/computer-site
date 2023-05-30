@@ -15,7 +15,7 @@ function Java() {
         <div className={style.box1}>
             <p>Course</p>
         <h1> Learn Java</h1>
-        <p>Learn how to use Java- a powerful and flexible programmimg language for adding website interactivity</p>
+        <p>Learn how to use Java- Java is the foundation for virtually every type of networked application and is the global standard for developing and delivering embedded and mobile applications, games, web-based content, and enterprise software</p>
         <h6>4.5 <span>⭐⭐⭐⭐⭐</span></h6>
         <button>Start</button>
         </div>
