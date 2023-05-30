@@ -12,8 +12,8 @@ function SlideShow() {
           alt="First slide"
         />
         <Carousel.Caption className={style.Caption}>
-          <h3>Nature</h3>
-          <p>Images can help us understand the urgency many photographers feel to protect wild places</p>
+          <h3>Martin Fowler</h3>
+          <p>Any fool can write code that a computer can understand. Good programmers write code that humans can understand.</p>
         </Carousel.Caption>
       </Carousel.Item>
 
@@ -25,8 +25,8 @@ function SlideShow() {
         />
 
         <Carousel.Caption className={style.Caption}>
-          <h3>Sunset</h3>
-          <p>You can never watch too many sunsets.</p>
+          <h3>John Johnson</h3>
+          <p>“First, solve the problem. Then, write the code.” </p>
         </Carousel.Caption>
       </Carousel.Item>
 
@@ -39,9 +39,9 @@ function SlideShow() {
         />
 
         <Carousel.Caption className={style.Caption}>
-          <h3>Mountain</h3>
+          <h3>Oscar Wilde</h3>
           <p>
-          The hardest climb brings the best rewards.
+          “Experience is the name everyone gives to their mistakes.”
           </p>
         </Carousel.Caption>
       </Carousel.Item>
@@ -55,9 +55,9 @@ function SlideShow() {
         />
 
         <Carousel.Caption className={style.Caption} >
-          <h3>landscape</h3>
+          <h3>Coco Chanel</h3>
           <p>
-          The woods offer a unique canvas for photographers, with an ever-changing landscape of light and shadow.
+          “ In order to be irreplaceable, one must always be different”
           </p>
         </Carousel.Caption>
       </Carousel.Item>
