@@ -37,7 +37,6 @@ export default function StudentForm() {
             required
             type="text"
             placeholder="Full name"
-            defaultValue="Sachin Singh"
           />
           <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
         </Form.Group>
@@ -47,7 +46,6 @@ export default function StudentForm() {
             required
             type="email"
             placeholder="Email"
-            defaultValue="sachin@gmail.com"
           />
           <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
         </Form.Group>
@@ -57,7 +55,6 @@ export default function StudentForm() {
             <Form.Control
               type="number"
               placeholder="Number"
-              aria-describedby="9304376077"
               required
             />
           </InputGroup>
