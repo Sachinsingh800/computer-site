@@ -8,6 +8,9 @@ import { LuBookOpenCheck} from 'react-icons/lu';
 import Accordian from '../../../Atom/SlideBar/Accordian';
 
 function Python() {
+  function navigate(){
+    window.open("/Form")
+  }
   return (
     <>     
        <NavBar/>
@@ -17,7 +20,7 @@ function Python() {
         <h1> Learn Python</h1>
         <p>Learn how to use Python- Python is the second best language for any job, and the best language for every job you hate</p>
         <h6>4.5 <span>⭐⭐⭐⭐⭐</span></h6>
-        <button>Start</button>
+        <button onClick={navigate}>Start</button>
         </div>
         <div className={style.box2}>
           <ul>

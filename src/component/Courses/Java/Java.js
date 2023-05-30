@@ -8,6 +8,9 @@ import { LuBookOpenCheck} from 'react-icons/lu';
 import Accordian from '../../../Atom/SlideBar/Accordian';
 
 function Java() {
+  function navigate(){
+    window.open("/Form")
+  }
   return (
     <>     
        <NavBar/>
@@ -17,7 +20,7 @@ function Java() {
         <h1> Learn Java</h1>
         <p>Learn how to use Java- Java is the foundation for virtually every type of networked application and is the global standard for developing and delivering embedded and mobile applications, games, web-based content, and enterprise software</p>
         <h6>4.5 <span>⭐⭐⭐⭐⭐</span></h6>
-        <button>Start</button>
+        <button onClick={navigate}>Start</button>
         </div>
         <div className={style.box2}>
           <ul>
