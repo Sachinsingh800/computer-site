@@ -6,6 +6,7 @@ import { BiTimeFive} from 'react-icons/bi';
 import { TbCertificate} from 'react-icons/tb';
 import { LuBookOpenCheck} from 'react-icons/lu';
 import Image from "../../Image/file.png"
+import Accordian from '../../Atom/SlideBar/Accordian';
 
 function Javascript() {
   return (
@@ -57,6 +58,14 @@ function Javascript() {
             </ul>
            </div>
         </div>
+        <div className={style.box4}>
+            <div className={style.innerBox4}>
+                <h3>Syllabus</h3>
+                <h6>11 lessons • 12 projects • 8 quizzes</h6>
+            </div>
+        < Accordian/>
+        </div>
+       
     </div>
     </>
   )
