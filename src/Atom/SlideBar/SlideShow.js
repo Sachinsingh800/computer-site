@@ -8,7 +8,7 @@ function SlideShow() {
       <Carousel.Item>
         <img
           className={style.img}
-          src="https://source.unsplash.com/random/700*500/?book"
+          src="https://source.unsplash.com/random/700*500/?Laptop"
           alt="First slide"
         />
         <Carousel.Caption className={style.Caption}>
@@ -20,7 +20,7 @@ function SlideShow() {
       <Carousel.Item>
         <img
           className={style.img}
-          src="https://source.unsplash.com/random/700*500/?education"
+          src="https://source.unsplash.com/random/700*500/?programer"
           alt="Second slide"
         />
 
@@ -34,7 +34,7 @@ function SlideShow() {
       <Carousel.Item>
         <img
           className={style.img}
-          src="https://source.unsplash.com/random/700*500/?student"
+          src="https://source.unsplash.com/random/700*500/?computer"
           alt="Third slide"
         />
 
@@ -50,7 +50,7 @@ function SlideShow() {
       <Carousel.Item>
         <img
           className={style.img}
-          src="https://source.unsplash.com/random/700*500/?school"
+          src="https://source.unsplash.com/random/700*500/?coder"
           alt="Third slide"
         />
 
