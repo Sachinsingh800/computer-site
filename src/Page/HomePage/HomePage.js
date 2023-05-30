@@ -4,13 +4,13 @@ import expert from "../../Image/expert.gif"
 import course from "../../Image/course.gif"
 import most from "../../Image/most.gif"
 import time from "../../Image/time.gif"
+import SlideShow from '../../Atom/SlideBar/SlideShow'
 
 
 function HomePage() {
   return (
     <div className={style.main}>
-      <h1 className={style.heading}>Welcome to ComputerWorld</h1>
-      <h1  className={style.headingForMobileView}>Welcome to ComputerWorld</h1>
+      <SlideShow />
       <div className={style.footer}>
               <div>
               <img className={style.expert} src={most} alt='Most Recommended'/>
