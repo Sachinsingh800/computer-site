@@ -10,6 +10,9 @@ import {
 import Signup from './Page/Signup/Signup';
 import Signin from './Page/Signin/Signin';
 import Profile from './Page/Profile/Profile';
+import Java from './component/Courses/Java';
+import Javascript from './component/Courses/Javascript';
+import Python from './component/Courses/Python';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createBrowserRouter([
@@ -28,6 +31,18 @@ const router = createBrowserRouter([
   {
     path: "/Profile",
     element: <Profile />,
+  },
+  {
+    path: "/Java",
+    element: <Java />,
+  },
+  {
+    path: "/Javascript",
+    element: <Javascript />,
+  },
+  {
+    path: "/Python",
+    element: <Python />,
   },
 ]);
 root.render(

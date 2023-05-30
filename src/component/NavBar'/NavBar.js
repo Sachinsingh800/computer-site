@@ -35,13 +35,13 @@ function navigateToProfile(){
           <a href="#">Course <span className={style.character}>	&#11165;</span></a>
           <ul className={style.dropdown_content}>
             <li>
-              <a href="#">Service 1</a>
+              <a href="/Javascript">Javascript</a>
             </li>
             <li>
-              <a href="#">Service 2</a>
+              <a href="/Java">Java</a>
             </li>
             <li>
-              <a href="#">Service 3</a>
+              <a href="/Python">Python</a>
             </li>
           </ul>
         </li>
