@@ -20,8 +20,23 @@ import {MdPayment} from 'react-icons/md';
 import {GoIssueReopened} from 'react-icons/go'
 import {BiSupport} from 'react-icons/bi'
 import style from "./TemporaryDrawer.module.css"
+import SlideBarAccordian from './SlideBarAccordian';
+import { useNavigate } from 'react-router-dom';
 
 export default function TemporaryDrawer() {
+  const navigate=useNavigate()
+  const Java="java"
+  const Javascript="Javascript"
+  const Python="Python"
+  function toJava(){
+    navigate("/Java")
+ }
+ function toJavascript(){
+    navigate("/Javascript")
+ }
+ function toPython(){
+    navigate("/Python")
+ }
   const [state, setState] = React.useState({
  
     left: false,
@@ -40,14 +55,18 @@ export default function TemporaryDrawer() {
     <Box
       sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250 }}
       role="presentation"
-      onClick={toggleDrawer(anchor, false)}
-      onKeyDown={toggleDrawer(anchor, false)}
+      // onClick={toggleDrawer(anchor, false)}
+      // onKeyDown={toggleDrawer(anchor, false)}
     >
       <List className={style.opt} style={{display:"flex",flexDirection:"column",justifyContent:"space-evenly",paddingLeft:"20px",height:"100vh"}}>
       <Link to={"/"} className={style.Link}><h4><FaHome/>Home</h4></Link> 
       <h4><FcAbout />About</h4>
      <Link to={"/Profile"} className={style.Link}><h4><CgProfile/>Profile</h4></Link> 
-     <Link to={"/Javascript"} className={style.Link}> <h4><BiBook/>Course</h4></Link> 
+      <h4><BiBook/><SlideBarAccordian
+       Java={Java} Javascript={Javascript} Python={Python}
+       toJava={toJava} toJavascript={toJavascript} toPython={toPython}
+      
+      /> </h4>
       <h4><IoIosWoman/>Student Zone</h4>
       <h4><FcGallery/>Gallery</h4>
       <h4><MdOutlinePermContactCalendar/>Contact</h4>
