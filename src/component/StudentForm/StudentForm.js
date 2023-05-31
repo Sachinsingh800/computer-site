@@ -9,7 +9,7 @@ import style from './StudentForm.module.css'
 import NavBar from '../NavBar/NavBar';
 import  axios from 'axios';
 import {user} from "../../Recoil"
-import { useRecoilState, useSetRecoilState } from 'recoil';
+import { useRecoilState } from 'recoil';
 
 
 export default function StudentForm() {

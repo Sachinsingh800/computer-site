@@ -6,23 +6,21 @@
     display: flex;
     align-items: center;
     color: white;
-    gap: 1rem;
-    padding: 3rem;
-    justify-content: center;
-   
+    gap: 4rem;
+    padding: 2rem;
+  
 }
 .CourseAccodian{
-    width: 20rem;
-    margin-top: 2.4rem;
+    width: 35rem;
+    margin-top: 3rem;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 .container{
     background-color: white;
-    margin-top: 2rem;
     color: black;
     height: 32rem;
-    width: 55rem;
-    right: 5%;
+    width: 40rem;
+    margin-top: -4rem;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
@@ -47,6 +45,16 @@
         width: 40rem;
     }
     .container{
+        width: 40rem;
+    }
+}
+.video{
+    height: 32rem;
+    width: 40rem;
+}
+
+@media (max-width:620px){
+    .video{
         width: 40rem;
     }
 }
