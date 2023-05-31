@@ -1,6 +1,7 @@
 import React from 'react'
 import style from "./RegisterUserHome.module.css"
 import CourseAccodian from '../../Atom/SlideBar/CourseAccodian'
+import CourseVideo from '../../Atom/SlideBar/CourseVideo'
 
 
 
@@ -11,7 +12,7 @@ function RegisterUserHome() {
         <CourseAccodian />
       </div>
       <div className={style.container}>
-        <h1>hello</h1>
+       <CourseVideo />
       </div>
     </div>
   )
