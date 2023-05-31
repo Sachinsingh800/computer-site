@@ -14,6 +14,8 @@ import Java from './component/Courses/Java/Java';
 import Javascript from './component/Courses/Javascript/Javascript';
 import Python from './component/Courses/Python/Python';
 import StudentForm from './component/StudentForm/StudentForm';
+import RegisterUserHome from './Page/RegisterUserHome/RegisterUserHome';
+import { RecoilRoot } from 'recoil';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createBrowserRouter([
@@ -49,10 +51,17 @@ const router = createBrowserRouter([
     path: "/Form",
     element: <StudentForm />,
   },
+  {
+    path: "/RegisterUserHome",
+    element: <RegisterUserHome />,
+  },
 ]);
 root.render(
   <React.StrictMode>
-  <RouterProvider router={router} />
+     <RecoilRoot>
+     <RouterProvider router={router} />
+     </RecoilRoot>
+  
   </React.StrictMode>
 );
 

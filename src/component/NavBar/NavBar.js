@@ -50,13 +50,19 @@ function navigateToProfile(){
           <a href="#">Student Zone <span className={style.character}>	&#11165;</span></a>
           <ul className={style.dropdown_content}>
             <li>
-              <a href="#">Service 1</a>
+              <a href="/Form">Online Enquiry</a>
             </li>
             <li>
-              <a href="#">Service 2</a>
+              <a href="#">Student Verfication</a>
             </li>
             <li>
-              <a href="#">Service 3</a>
+              <a href="/Signin">Student login</a>
+            </li>
+            <li>
+              <a href="/Signin">Certificate Verfication</a>
+            </li>
+            <li>
+              <a href="/Signin">ID Card</a>
             </li>
           </ul>
         </li>
