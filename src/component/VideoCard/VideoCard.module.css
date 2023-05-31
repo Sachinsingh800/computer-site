@@ -1,7 +1,7 @@
 .main{
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 80vh;
     overflow-y: scroll;
     gap: 1rem;
  
@@ -17,6 +17,7 @@
 .img{
     border-radius: 10px;
     height: 8rem;
+    width: 10rem;
 }
 .box1{
     padding: 1rem;
