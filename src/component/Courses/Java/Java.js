@@ -6,6 +6,7 @@ import { BiTimeFive} from 'react-icons/bi';
 import { TbCertificate} from 'react-icons/tb';
 import { LuBookOpenCheck} from 'react-icons/lu';
 import Accordian from '../../../Atom/SlideBar/Accordian';
+import RatingStar from '../../../Atom/SlideBar/RatingStar';
 
 function Java() {
   function navigate(){
@@ -19,7 +20,7 @@ function Java() {
             <p>Course</p>
         <h1> Learn Java</h1>
         <p>Learn how to use Java- Java is the foundation for virtually every type of networked application and is the global standard for developing and delivering embedded and mobile applications, games, web-based content, and enterprise software</p>
-        <h6>4.5 <span>⭐⭐⭐⭐⭐</span></h6>
+        <h6><RatingStar  /></h6>
         <button onClick={navigate}>Start</button>
         </div>
         <div className={style.box2}>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import style from "./Javascript.module.css"
 import NavBar from '../../NavBar/NavBar'
 import { BsBarChartFill } from 'react-icons/bs';
@@ -6,12 +6,15 @@ import { BiTimeFive} from 'react-icons/bi';
 import { TbCertificate} from 'react-icons/tb';
 import { LuBookOpenCheck} from 'react-icons/lu';
 import Accordian from '../../../Atom/SlideBar/Accordian';
+import RatingStar from '../../../Atom/SlideBar/RatingStar';
 
 
 function Javascript() {
+
   function navigate(){
     window.open("/Form")
   }
+
   return (
     <>     
        <NavBar/>
@@ -20,7 +23,7 @@ function Javascript() {
             <p>Course</p>
         <h1> Learn JavaScript</h1>
         <p>Learn how to use JavaScript - a powerful and flexible programmimg language for adding website interactivity</p>
-        <h6>4.5 <span>⭐⭐⭐⭐⭐</span></h6>
+        <h6><RatingStar  /></h6>
         <button onClick={navigate}>Start</button>
         </div>
         <div className={style.box2}>

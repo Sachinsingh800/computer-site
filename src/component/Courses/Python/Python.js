@@ -6,6 +6,7 @@ import { BiTimeFive} from 'react-icons/bi';
 import { TbCertificate} from 'react-icons/tb';
 import { LuBookOpenCheck} from 'react-icons/lu';
 import Accordian from '../../../Atom/SlideBar/Accordian';
+import RatingStar from '../../../Atom/SlideBar/RatingStar';
 
 function Python() {
   function navigate(){
@@ -19,7 +20,7 @@ function Python() {
             <p>Course</p>
         <h1> Learn Python</h1>
         <p>Learn how to use Python- Python is the second best language for any job, and the best language for every job you hate</p>
-        <h6>4.5 <span>⭐⭐⭐⭐⭐</span></h6>
+        <h6><RatingStar  /></h6>
         <button onClick={navigate}>Start</button>
         </div>
         <div className={style.box2}>
