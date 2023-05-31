@@ -1,39 +1,49 @@
 .main{
-    padding-top: 6rem;
     background-image: url("https://c4.wallpaperflare.com/wallpaper/922/804/907/light-laptop-notebook-lighting-wallpaper-preview.jpg");
     background-size: cover;
     background-color: white;
-    height: 100vh;
+    height: max-content;
     display: flex;
-    flex-direction: column;
     align-items: center;
     color: white;
+    gap: 1rem;
+    padding: 3rem;
+    justify-content: center;
+   
 }
-.footer{
-    position: absolute;
-    display: flex;
-    width: 100vw;
-    align-items: center;
-    justify-content: space-evenly;
-    bottom:0% ;
-    height: 10rem;
-    backdrop-filter: blur(10px);
+.CourseAccodian{
+    width: 20rem;
+    margin-top: 2.7rem;
+}
+.container{
+    background-color: white;
+    color: black;
+    height: 30rem;
+    width: 55rem;
+    right: 5%;
+    border-radius: 10px;
 }
 @media (max-width:1000px){
    html{
     font-size: 10px;
    }
 }
-.expert{
-    height: 3rem;
-}
-@media (max-width:700px){
-    .footer{
-        flex-direction: column;
-        height: max-content;
-        height: 40rem;
-    }
+
+@media (max-width:848px){
+
     .main{
-        justify-content: flex-start;
+        flex-direction: column;
+    }
+    .CourseAccodian{
+        width: 55rem;
+    }
+
+}
+@media (max-width:620px){
+    .CourseAccodian{
+        width: 40rem;
+    }
+    .container{
+        width: 40rem;
     }
 }
