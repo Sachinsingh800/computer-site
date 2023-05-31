@@ -42,19 +42,14 @@
 }
 @media (max-width:620px){
     .CourseAccodian{
-        width: 40rem;
+        width: 35rem;
     }
     .container{
-        width: 40rem;
+        width: 35rem;
     }
 }
 .video{
     height: 32rem;
-    width: 40rem;
+    width: 35rem;
 }
 
-@media (max-width:620px){
-    .video{
-        width: 40rem;
-    }
-}
