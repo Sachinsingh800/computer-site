@@ -3,11 +3,14 @@ import './App.css';
 import HomePage from './Page/HomePage/HomePage';
 import RegisterUserHome from './Page/RegisterUserHome/RegisterUserHome';
 import NavBar from './component/NavBar/NavBar';
-import {user} from "./Recoil"
-import { useRecoilValue } from 'recoil';
+import { useState } from 'react';
+
+
 
 function App() {
-const show = useRecoilValue(user)
+
+const [show,setShow] = useState(JSON.parse(localStorage.getItem("verified"))) 
+
   return (
     <div className="App">
       <NavBar />
