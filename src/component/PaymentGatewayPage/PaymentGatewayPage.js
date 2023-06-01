@@ -6,12 +6,14 @@ import style from "./PaymentGatewayPage.module.css"
 
 const PaymentGatewayPage = () => {
   const [show,setShow] = useState(JSON.parse(localStorage.getItem("verified"))) 
+  console.log(show,"paymemt")
   const navigate= useNavigate()
 
   const handleToken = (token) => {
     // Handle the payment token
     console.log(token);
     setShow(true)
+    localStorage.setItem("verified",JSON.stringify(show))
     navigate("/")
   };
 
