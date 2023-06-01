@@ -53,7 +53,7 @@ function navigateToProfile(){
               <a href="/Form">Online Enquiry</a>
             </li>
             <li>
-              <a href="#">Student Verfication</a>
+              <a href="/StudentVerification">Student Verfication</a>
             </li>
             <li>
               <a href="/Signin">Student login</a>

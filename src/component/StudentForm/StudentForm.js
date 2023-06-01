@@ -8,14 +8,10 @@ import { useNavigate } from 'react-router-dom';
 import style from './StudentForm.module.css'
 import NavBar from '../NavBar/NavBar';
 import  axios from 'axios';
-import {user} from "../../Recoil"
-import { useRecoilState } from 'recoil';
+
 
 
 export default function StudentForm() {
-  console.log(user)
-  const [show,setShow]=useRecoilState(user)
- 
 
   const [validated, setValidated] = useState(false);
   const navigate=useNavigate()
@@ -63,8 +59,7 @@ export default function StudentForm() {
     } catch (error) {
       console.log(error.message);
     }
-    setShow(true)
-    navigate("/")
+    navigate("/PaymentGatewayPage")
   }
 
 

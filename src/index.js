@@ -16,6 +16,8 @@ import Python from './component/Courses/Python/Python';
 import StudentForm from './component/StudentForm/StudentForm';
 import RegisterUserHome from './Page/RegisterUserHome/RegisterUserHome';
 import { RecoilRoot } from 'recoil';
+import PaymentGatewayPage from './component/PaymentGatewayPage/PaymentGatewayPage';
+import StudentVerification from './component/StudentVerification/StudentVerification';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createBrowserRouter([
@@ -54,6 +56,14 @@ const router = createBrowserRouter([
   {
     path: "/RegisterUserHome",
     element: <RegisterUserHome />,
+  },
+  {
+    path: "/PaymentGatewayPage",
+    element: <PaymentGatewayPage />,
+  },
+  {
+    path: "/StudentVerification",
+    element: <StudentVerification />,
   },
 ]);
 root.render(
