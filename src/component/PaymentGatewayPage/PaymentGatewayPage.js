@@ -1,19 +1,20 @@
-import React ,{useState} from 'react';
+import React ,{useEffect, useState} from 'react';
 import StripeCheckout from 'react-stripe-checkout';
 import { useNavigate } from 'react-router-dom';
 import style from "./PaymentGatewayPage.module.css"
 
 
 const PaymentGatewayPage = () => {
-  const [show,setShow] = useState(JSON.parse(localStorage.getItem("verified"))) 
-  console.log(show,"paymemt")
+
   const navigate= useNavigate()
 
+
+
   const handleToken = (token) => {
-    // Handle the payment token
-    console.log(token);
-    setShow(true)
-    localStorage.setItem("verified",JSON.stringify(show))
+   
+    localStorage.setItem("verified",JSON.stringify({
+      verified:true
+    }))
     navigate("/")
   };
 
@@ -30,7 +31,7 @@ const PaymentGatewayPage = () => {
         name="Example Store"
         description="Purchase"
       >
-        <button className={style.btn} >Pay Now</button>
+        <button className={style.btn}  >Pay Now</button>
       </StripeCheckout>
      </div>
       

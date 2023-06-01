@@ -6,16 +6,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import style from "./StudentVerification.module.css"
 import {  useNavigate } from 'react-router-dom';
 import NavBar from '../../component/NavBar/NavBar';
-import { useRecoilState } from 'recoil';
-import {user} from "../../Recoil"
+
 
 
 
 function StudentVerification() {
     const [email, setEmail] = useState(" ")
     const [dob, setDob] = useState("")
-    const [show,setShow]=useRecoilState(user)
-    localStorage.setItem("verified",JSON.stringify(show))
+
   const navigate = useNavigate()
 
  

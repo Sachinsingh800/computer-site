@@ -7,14 +7,16 @@ import { useState } from 'react';
 
 
 
+
 function App() {
 
-const [show,setShow] = useState(JSON.parse(localStorage.getItem("verified"))) 
+
+  const [show,setShow] = useState(JSON.parse(localStorage.getItem("verified") || false)) 
 
   return (
     <div className="App">
       <NavBar />
-      {show ? <RegisterUserHome />  :<HomePage /> }
+      {show.verified ? <RegisterUserHome />  :<HomePage /> }
    
 
     </div>
