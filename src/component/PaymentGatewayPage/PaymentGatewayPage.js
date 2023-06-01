@@ -1,13 +1,11 @@
-import React from 'react';
+import React ,{useState} from 'react';
 import StripeCheckout from 'react-stripe-checkout';
 import { useNavigate } from 'react-router-dom';
-import {user} from "../../Recoil"
-import { useRecoilState } from 'recoil';
 import style from "./PaymentGatewayPage.module.css"
 
 
 const PaymentGatewayPage = () => {
-  const [show,setShow]=useRecoilState(user)
+  const [show,setShow] = useState(JSON.parse(localStorage.getItem("verified"))) 
   const navigate= useNavigate()
 
   const handleToken = (token) => {
@@ -26,7 +24,7 @@ const PaymentGatewayPage = () => {
      <StripeCheckout
         stripeKey="pk_test_51NE6LASGUNfgBx8bKMHBk8JUukvByC2DAkS9jxHkzLjmmrTEzPPIKIS1SqDEVIbaTwVWPd0GXFSa2Wp8Nevje2aZ00wMgEeknC"
         token={handleToken}
-        amount={1000} // Amount in cents
+        amount={1000000} // Amount in cents
         name="Example Store"
         description="Purchase"
       >
