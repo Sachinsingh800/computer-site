@@ -28,6 +28,14 @@ export default function TemporaryDrawer() {
   const Java="java"
   const Javascript="Javascript"
   const Python="Python"
+  const course="Course"
+  const Student="Student Zone"
+  const Enquiry="Online Enquiry"
+  const Verfication="Student Verification"
+  const login="Student login"
+  const Certificate="Certificate Verifiaction"
+  const id="id Card"
+
   function toJava(){
     navigate("/Java")
  }
@@ -36,6 +44,21 @@ export default function TemporaryDrawer() {
  }
  function toPython(){
     navigate("/Python")
+ }
+ function OnlineEnquiryFcn(){
+    navigate("/Form")
+ }
+ function StudentLoginFcn(){
+    navigate("/Signin")
+ }
+ function CertificateVerificationFcn(){
+    // navigate("/")
+ }
+ function idFcn(){
+    // navigate("/Form")
+ }
+ function  StudentVerificationFcn(){
+    navigate("/StudentVerification")
  }
   const [state, setState] = React.useState({
  
@@ -63,11 +86,29 @@ export default function TemporaryDrawer() {
       <h4><FcAbout />About</h4>
      <Link to={"/Profile"} className={style.Link}><h4><CgProfile/>Profile</h4></Link> 
       <h4><BiBook/><SlideBarAccordian
-       Java={Java} Javascript={Javascript} Python={Python}
-       toJava={toJava} toJavascript={toJavascript} toPython={toPython}
+       Java={Java} 
+       Javascript={Javascript} 
+       Python={Python}
+       toJava={toJava}
+        toJavascript={toJavascript}
+         toPython={toPython}
+       course={course}
       
       /> </h4>
-      <h4><IoIosWoman/>Student Zone</h4>
+
+      <h4><IoIosWoman/><SlideBarAccordian
+           Student={Student}
+           Enquiry={Enquiry}
+          Verfication={Verfication}
+           login={login}
+           id={id}
+           Certificate={Certificate}
+           OnlineEnquiryFcn={OnlineEnquiryFcn}
+           StudentLoginFcn={StudentLoginFcn}
+           CertificateVerificationFcn={CertificateVerificationFcn}
+           StudentVerificationFcn={StudentVerificationFcn}
+           idFcn={idFcn}
+      /> </h4>
       <h4><FcGallery/>Gallery</h4>
       <h4><MdOutlinePermContactCalendar/>Contact</h4>
       <h4><FaCloudDownloadAlt/>Download</h4>

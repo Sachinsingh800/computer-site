@@ -9,12 +9,14 @@ function SlideBarAccordian(props) {
     <Accordion defaultActiveKey="0">
   
       <Accordion.Item style={{outline:"none",border:"none"}} eventKey="1">
-      <Accordion.Header style={{outline:"none",border:"none"}}><h4>Course</h4></Accordion.Header>
+      <Accordion.Header style={{outline:"none",border:"none"}}><h4>{props.course}{props.Student}</h4></Accordion.Header>
         <Accordion.Body >
    <ul style={{outline:"none",border:"none",listStyle:"none"}}>
-      <li onClick={props.toJavascript}>{props.Javascript}</li>
-      <li onClick={props.toJava}>{props.Java}</li>
-      <li onClick={props.toPython}>{props.Python}</li>
+      <li onClick={props.toJavascript} >{props.Javascript}<span onClick={props.OnlineEnquiryFcn}>{props.Enquiry}</span></li>
+      <li onClick={props.toJava}>{props.Java}<span onClick={props.StudentVerificationFcn}>{props.Verfication}</span></li>
+      <li onClick={props.toPython}>{props.Python}<span onClick={props.StudentLoginFcn}>{props.login}</span></li>
+      <li onClick={props.idFcn}>{props.id}</li>
+      <li onClick={props.CertificateVerificationFcn}>{props.Certificate}</li>
 
    </ul>
         </Accordion.Body>
