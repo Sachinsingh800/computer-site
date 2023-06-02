@@ -9,7 +9,7 @@ import {BiSupport } from 'react-icons/bi';
 
 const VerifiedProfile= () => {
   let user = JSON.parse(localStorage.getItem("userData"));
-  console.log(user,"imgae check")
+
 
   return (
     <div className={style.home}>

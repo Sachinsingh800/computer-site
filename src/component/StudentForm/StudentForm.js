@@ -131,6 +131,9 @@ export default function StudentForm() {
              name='course'
              value={gender}
             >
+              <option disabled>
+                gender 
+              </option>
               <option>
                 Male
               </option>
@@ -150,6 +153,9 @@ export default function StudentForm() {
              name='course'
              value={course}
             >
+              <option disabled>
+                course
+              </option>
               <option>
                 Java
               </option>

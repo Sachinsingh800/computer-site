@@ -19,6 +19,7 @@ import { RecoilRoot } from 'recoil';
 import PaymentGatewayPage from './component/PaymentGatewayPage/PaymentGatewayPage';
 import StudentVerification from './component/StudentVerification/StudentVerification';
 import VerifiedProfile from './Page/VerifiedProfile/VerifiedProfile';
+import IdCard from './component/IdCard/IdCard';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createBrowserRouter([
@@ -69,6 +70,10 @@ const router = createBrowserRouter([
   {
     path: "/VerifiedProfile",
     element: <VerifiedProfile />,
+  },
+  {
+    path: "/IdCard",
+    element: <IdCard />,
   },
 ]);
 root.render(
