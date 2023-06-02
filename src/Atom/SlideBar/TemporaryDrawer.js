@@ -83,7 +83,7 @@ export default function TemporaryDrawer() {
     >
       <List className={style.opt} style={{display:"flex",flexDirection:"column",justifyContent:"space-evenly",paddingLeft:"20px",height:"100vh"}}>
       <Link to={"/"} className={style.Link}><h4><FaHome/>Home</h4></Link> 
-      <h4><FcAbout />About</h4>
+      <Link to={"/AboutUs"} className={style.Link}><h4><FcAbout />About</h4></Link> 
      <Link to={"/Profile"} className={style.Link}><h4><CgProfile/>Profile</h4></Link> 
       <h4><BiBook/><SlideBarAccordian
        Java={Java} 

@@ -20,6 +20,9 @@ import PaymentGatewayPage from './component/PaymentGatewayPage/PaymentGatewayPag
 import StudentVerification from './component/StudentVerification/StudentVerification';
 import VerifiedProfile from './Page/VerifiedProfile/VerifiedProfile';
 import IdCard from './component/IdCard/IdCard';
+import ForgetPassword from './Page/ForgetPassword/ForgetPassword';
+import ResetPassword from './Page/ResetPassword/ResetPassword';
+import AboutUs from './Page/AboutUs/AboutUs';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createBrowserRouter([
@@ -74,6 +77,18 @@ const router = createBrowserRouter([
   {
     path: "/IdCard",
     element: <IdCard />,
+  },
+  {
+    path: "/AboutUs",
+    element: <AboutUs />,
+  },
+  {
+    path: "/ResetPassword",
+    element: <ResetPassword />,
+  },
+  {
+    path: '/forgotPassword/:id/:token',
+    element: <ForgetPassword />,
   },
 ]);
 root.render(

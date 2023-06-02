@@ -32,7 +32,7 @@ function navigateToProfile(){
         </li>
 
         <li className={style.dropdown}>
-          <a href="#">About </a>
+          <a href="/AboutUs">About </a>
         </li>
 
         <li className={style.dropdown}>

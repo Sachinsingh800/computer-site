@@ -17,7 +17,9 @@ const navigate = useNavigate()
     function NavigateToSignup(){
       navigate("/Signup")
   }
-
+function NavigateToForgetPassword(){
+  navigate("/ResetPassword")
+}
     async function submit(e){
       e.preventDefault();
       try{
@@ -66,6 +68,8 @@ const navigate = useNavigate()
       </Button>
       <br/>
       <h6 className={style .Regis} onClick={NavigateToSignup}>Register</h6>
+      <br/>
+      <h6 className={style .Regis} onClick={NavigateToForgetPassword}>ForgetPassword</h6>
     </Form>
     </div>
     </>
