@@ -43,7 +43,7 @@ function IdCard() {
       <img className={style.barcode} src={barcode} alt='barCode'/>
     </div>
     </div>
-    <button onClick={handleDownload}>Download Page as PDF</button>
+    <button className={style.btn} onClick={handleDownload}>Download Page as PDF</button>
     </div>
   )
 }

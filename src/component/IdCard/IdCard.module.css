@@ -42,3 +42,8 @@
     justify-content: center;
     height: 5rem;
 }
+.btn{
+    position: absolute;
+    top: 1%;
+    right: 4%;
+}
