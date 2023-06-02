@@ -8,7 +8,7 @@ import { GoIssueReopened } from 'react-icons/go';
 import {BiSupport } from 'react-icons/bi';
 
 const VerifiedProfile= () => {
-  let user = JSON.parse(localStorage.getItem("admissionfrom"));
+  let user = JSON.parse(localStorage.getItem("userData"));
   console.log(user,"imgae check")
 
   return (
@@ -27,7 +27,7 @@ const VerifiedProfile= () => {
         <img className={style.Profilebg} src="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2017/02/Photoshop-Replace-Background-Featured.jpg" />
       
       <img className={style.img}
-          src={`https://server-bu32.onrender.com/api/userImages/${user?.data.studentDetails?.image}`}
+          src={`https://server-bu32.onrender.com/api/userImages/${user?.studentData?.image}`}
       />
       <div className={style.ProfileData}>
       <h3>My profile</h3>
@@ -36,74 +36,74 @@ const VerifiedProfile= () => {
         <li>
             <div className={style.info}>
             <h5>Name</h5>
-            {user?.data?.studentDetails?.name}
+            {user?.studentData?.name}
             </div>
             </li>
         <li>
             <div className={style.info}>
             <h5>Gender</h5>
-            {user?.data?.studentDetails?.gender}
+            {user?.studentData?.gender}
             </div>
             </li>
         <li>
         <div className={style.info}>
             <h5>Email id</h5>
-            {user?.data?.studentDetails?.email}
+            {user?.studentData?.email}
             </div>
             </li>
         <li>
         <div className={style.info}>
             <h5>Phone No</h5>
-            {user?.data?.studentDetails?.mobile}
+            {user?.studentData?.mobile}
             </div>
           
             </li>
         <li>
         <div className={style.info}>
             <h5>Address</h5>
-            {user?.data?.studentDetails?.address}
+            {user?.studentData?.address}
             </div>
           
             </li>
         <li>
         <div className={style.info}>
             <h5>Adhar No</h5>
-            {user?.data?.studentDetails?.adharNo}
+            {user?.studentData?.adharNo}
             </div>
           
             </li>
         <li>
         <div className={style.info}>
             <h5>course</h5>
-            {user?.data?.studentDetails?.course}
+            {user?.studentData?.course}
             </div>
           
             </li>
         <li>
         <div className={style.info}>
             <h5>Date of birth</h5>
-            {user?.data?.studentDetails?.dob}
+            {user?.studentData?.dob}
             </div>
           
             </li>
         <li>
         <div className={style.info}>
             <h5>Father-Name</h5>
-            {user?.data?.studentDetails?.fatherName}
+            {user?.studentData?.fatherName}
             </div>
           
             </li>
         <li>
         <div className={style.info}>
             <h5>Mother-Name</h5>
-            {user?.data?.studentDetails?.motherName}
+            {user?.studentData?.motherName}
             </div>
           
             </li>
         <li>
         <div className={style.info}>
             <h5>Parent Contact No</h5>
-            {user?.data?.studentDetails?.parentContact}
+            {user?.studentData?.parentContact}
             </div>
           
             </li>

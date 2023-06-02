@@ -11,11 +11,8 @@ const PaymentGatewayPage = () => {
 
 
   const handleToken = (token) => {
-   
-    localStorage.setItem("verified",JSON.stringify({
-      verified:true
-    }))
-    navigate("/")
+  
+    navigate("/StudentVerification")
   };
 
   return (

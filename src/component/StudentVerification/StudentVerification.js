@@ -27,7 +27,9 @@ function StudentVerification() {
       if(res.data.studentData.email==email ){
         localStorage.setItem("userData",JSON.stringify(res.data))
         alert(res.data.message)
- 
+        localStorage.setItem("verified",JSON.stringify({
+          verified:true
+        }))
         navigate("/")
       }else{
         navigate("/StudentVerification")

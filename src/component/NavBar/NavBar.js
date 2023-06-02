@@ -5,7 +5,7 @@ import TemporaryDrawer from "../../Atom/SlideBar/TemporaryDrawer";
 
 function NavBar() {
   const user=JSON.parse(localStorage.getItem("user"))
-  const User=JSON.parse(localStorage.getItem("admissionfrom"))
+  const User=JSON.parse(localStorage.getItem("userData"))
   const navigate = useNavigate()
   const [show,setShow] = useState(JSON.parse(localStorage.getItem("verified") || false)) 
 
@@ -115,7 +115,7 @@ function navigateToProfile(){
             <>
                  <li className={style.dropdown}>
                  <img  className={style.userImg}
-            src={`https://server-bu32.onrender.com/api/userImages/${User?.data.studentDetails?.image}`}
+            src={`https://server-bu32.onrender.com/api/userImages/${User?.studentData?.image}`}
             />
           <ul className={style.dropdown_contents}>
             <li>
