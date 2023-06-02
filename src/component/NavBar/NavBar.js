@@ -1,16 +1,20 @@
-import React from "react";
+import React,{useState} from "react";
 import style from "./NavBar.module.css";
 import { useNavigate } from "react-router-dom";
 import TemporaryDrawer from "../../Atom/SlideBar/TemporaryDrawer";
 
 function NavBar() {
   const user=JSON.parse(localStorage.getItem("user"))
+  const User=JSON.parse(localStorage.getItem("admissionfrom"))
   const navigate = useNavigate()
-
+  const [show,setShow] = useState(JSON.parse(localStorage.getItem("verified") || false)) 
 
   function logout(){
     localStorage.clear()
     navigate("/Signin")
+  }
+  function navigateToVerifiedProfile(){
+    navigate("/VerifiedProfile")
   }
 
 function navigateToProfile(){
@@ -105,7 +109,31 @@ function navigateToProfile(){
           <a href="#">Faculties</a>
         </li>
         <li>
-       {
+          {show ?          <div>
+          {
+            show ?  
+            <>
+                 <li className={style.dropdown}>
+                 <img  className={style.userImg}
+            src={`https://server-bu32.onrender.com/api/userImages/${User?.data.studentDetails?.image}`}
+            />
+          <ul className={style.dropdown_contents}>
+            <li>
+            <span onClick={navigateToVerifiedProfile}>Profile</span> 
+            </li>
+            <li>
+            <span onClick={logout}>Signout</span> 
+            </li>
+          </ul>
+        </li>
+         
+  
+      </>
+      :  <span onClick={navigateToSignin}>Signin</span>
+       }
+       </div> : 
+          <div>
+          {
             user ?  
             <>
                  <li className={style.dropdown}>
@@ -126,6 +154,9 @@ function navigateToProfile(){
       </>
       :  <span onClick={navigateToSignin}>Signin</span>
        }
+       </div>
+          }
+    
   
         </li>
       </ul>

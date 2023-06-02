@@ -18,6 +18,7 @@ import RegisterUserHome from './Page/RegisterUserHome/RegisterUserHome';
 import { RecoilRoot } from 'recoil';
 import PaymentGatewayPage from './component/PaymentGatewayPage/PaymentGatewayPage';
 import StudentVerification from './component/StudentVerification/StudentVerification';
+import VerifiedProfile from './Page/VerifiedProfile/VerifiedProfile';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createBrowserRouter([
@@ -64,6 +65,10 @@ const router = createBrowserRouter([
   {
     path: "/StudentVerification",
     element: <StudentVerification />,
+  },
+  {
+    path: "/VerifiedProfile",
+    element: <VerifiedProfile />,
   },
 ]);
 root.render(
