@@ -8,7 +8,7 @@ const ForgetPassword = () => {
   console.log(id,token)
 const navigate=useNavigate()
   const userValid=async()=>{
-    const res =await fetch(`http://localhost:8000/api/forgotpassword/${id}/${token}`,{
+    const res =await fetch(`https://computer-site-git-master-sachinsingh800.vercel.app/api/forgotpassword/${id}/${token}`,{
       method:"GET",
       headers:{
         "Content-Type":"application/json"
