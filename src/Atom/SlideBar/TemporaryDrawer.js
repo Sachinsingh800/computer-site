@@ -109,8 +109,8 @@ export default function TemporaryDrawer() {
            StudentVerificationFcn={StudentVerificationFcn}
            idFcn={idFcn}
       /> </h4>
-      <h4><FcGallery/>Gallery</h4>
-      <h4><MdOutlinePermContactCalendar/>Contact</h4>
+         <Link to={"/Gallery"} className={style.Link}> <h4><FcGallery/>Gallery</h4></Link> 
+         <Link to={"/ContactUs"} className={style.Link}><h4><MdOutlinePermContactCalendar/>Contact</h4></Link> 
       <h4><FaCloudDownloadAlt/>Download</h4>
       <h4><HiUserGroup/>Faculties</h4>
       <h4><MdOutlineAccountBalanceWallet/>Accounts</h4>

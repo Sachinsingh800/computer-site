@@ -1,20 +1,50 @@
 import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import style from "./CourseVideo.module.css"
-import ReactPlayer from 'react-player';
+
 
 function CourseVideo() {
   return (
     <Carousel>
       <Carousel.Item>
-      <iframe className={style.video}  src="https://www.youtube.com/embed/bBpKJccIdvQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <img
+          className={style.img}
+          src="https://source.unsplash.com/random/700*500/?computer+dark"
+          alt="First slide"
+        />
       </Carousel.Item>
+
       <Carousel.Item>
-        <iframe className={style.video} src="https://youtube.com/embed/kXrFo4pq23Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <img
+          className={style.img}
+          src="https://source.unsplash.com/random/700*500/?programer"
+          alt="Second slide"
+        />
+
+     
       </Carousel.Item>
+
+
       <Carousel.Item>
-        <iframe className={style.video} src="https://www.youtube.com/embed/3uaHXOqvo-Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <img
+          className={style.img}
+          src="https://source.unsplash.com/random/700*500/?computer-dark"
+          alt="Third slide"
+        />
+
+       
       </Carousel.Item>
+
+
+      <Carousel.Item>
+        <img
+          className={style.img}
+          src="https://source.unsplash.com/random/700*500/?coder"
+          alt="Third slide"
+        />
+
+      </Carousel.Item>
+
 
     </Carousel>
   );
