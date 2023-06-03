@@ -23,6 +23,8 @@ import IdCard from './component/IdCard/IdCard';
 import ForgetPassword from './Page/ForgetPassword/ForgetPassword';
 import ResetPassword from './Page/ResetPassword/ResetPassword';
 import AboutUs from './Page/AboutUs/AboutUs';
+import Gallery from './Page/Gallery/Gallery';
+import ContactUs from './Page/ContactUs/ContactUs';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createBrowserRouter([
@@ -89,6 +91,14 @@ const router = createBrowserRouter([
   {
     path: '/forgotPassword/:id/:token',
     element: <ForgetPassword />,
+  },
+  {
+    path: '/ContactUs',
+    element: <ContactUs/>,
+  },
+  {
+    path: '/Gallery',
+    element: <Gallery />,
   },
 ]);
 root.render(

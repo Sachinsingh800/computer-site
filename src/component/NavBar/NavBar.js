@@ -72,33 +72,12 @@ function navigateToProfile(){
         </li>
 
         <li className={style.dropdown}>
-          <a href="#">Gallery <span className={style.character}>	&#11165;</span></a>
-          <ul className={style.dropdown_content}>
-            <li>
-              <a href="#">Service 1</a>
-            </li>
-            <li>
-              <a href="#">Service 2</a>
-            </li>
-            <li>
-              <a href="#">Service 3</a>
-            </li>
-          </ul>
+          <a href="/Gallery">Gallery</a>
         </li>
 
         <li className={style.dropdown}>
-          <a href="#">Contact<span className={style.character}>	&#11165;</span></a>
-          <ul className={style.dropdown_content}>
-            <li>
-              <a href="#">Service 1</a>
-            </li>
-            <li>
-              <a href="#">Service 2</a>
-            </li>
-            <li>
-              <a href="#">Service 3</a>
-            </li>
-          </ul>
+          <a href="/ContactUs">Contact</a>
+      
         </li>
 
         <li>

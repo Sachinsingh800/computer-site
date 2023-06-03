@@ -1,9 +1,9 @@
 .main{
     display: flex;
     height: 100vh;
-    background-image: url("https://images3.alphacoders.com/100/1006696.png");
+    background-image: url("https://cdn.dribbble.com/users/1658867/screenshots/4721860/wallpaper.png");
     background-size: cover;
- 
+    color: white;
 }
 .main div{
   width: 50%;
@@ -13,8 +13,7 @@
     gap: 1rem;
     flex-direction: column;
     justify-content: center;
-    padding: 1rem 4rem 1rem 4rem;
-    color: white;
+    padding: 1rem 0rem 1rem 9rem;
 }
 .box1 button{
     width: 10rem;
@@ -35,9 +34,11 @@
     align-items: center;
     justify-content: center;
     padding: 1rem;
+ 
+
 }
 .img{
-    height: 20rem;
+    height: 30rem;
     filter: drop-shadow(1rem 1rem 1rem rgb(0, 0, 0));
 }
 @media (max-width:800px){
@@ -55,4 +56,17 @@
         font-size: small;
     }
   
+}
+.data img{
+    height: 4rem;
+}
+.data{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50rem;
+}
+.data div{
+    width: 100%;
+    margin: 1rem;
 }
