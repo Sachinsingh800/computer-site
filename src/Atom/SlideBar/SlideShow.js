@@ -8,7 +8,7 @@ function SlideShow() {
       <Carousel.Item>
         <img
           className={style.img}
-          src="https://source.unsplash.com/random/700*500/?Laptop"
+          src="https://source.unsplash.com/random/700*500/?computer+dark"
           alt="First slide"
         />
         <Carousel.Caption className={style.Caption}>
@@ -34,7 +34,7 @@ function SlideShow() {
       <Carousel.Item>
         <img
           className={style.img}
-          src="https://source.unsplash.com/random/700*500/?computer"
+          src="https://source.unsplash.com/random/700*500/?computer-dark"
           alt="Third slide"
         />
 
