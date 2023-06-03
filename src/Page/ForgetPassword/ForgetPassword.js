@@ -8,7 +8,7 @@ const ForgetPassword = () => {
   console.log(id,token)
 const navigate=useNavigate()
   const userValid=async()=>{
-    const res =await fetch(`https://computer-site-git-master-sachinsingh800.vercel.app/api/forgotpassword/${id}/${token}`,{
+    const res =await fetch(`https://server-bu32.onrender.com/api/forgotpassword/${id}/${token}`,{
       method:"GET",
       headers:{
         "Content-Type":"application/json"
@@ -28,7 +28,7 @@ const navigate=useNavigate()
   },[])
   const updatePassword=async(e)=>{
     e.preventDefault()
-    const res =await fetch(`http://localhost:8000/api/${id}/${token}`,{
+    const res =await fetch(`https://server-bu32.onrender.com/api/${id}/${token}`,{
       method:"POST",
       headers:{
         "Content-Type":"application/json"

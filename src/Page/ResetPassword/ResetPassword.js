@@ -5,7 +5,7 @@ function ResetPassword() {
 
     const sendLink=async(e)=>{
         e.preventDefault()
-         const res =await fetch("http://localhost:8000/api/sendpasswordlink",{
+         const res =await fetch("https://server-bu32.onrender.com/api/sendpasswordlink",{
             method:"POST",
             headers:{
                 "Content-Type":"application/json"
