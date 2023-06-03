@@ -1,4 +1,7 @@
 import React, { useState } from 'react'
+import style from "./ResetPassword.module.css"
+import Image from "../../Image/mail.gif"
+import NavBar from '../../component/NavBar/NavBar'
 
 function ResetPassword() {
     const [email,setEmail] = useState("")
@@ -12,13 +15,22 @@ function ResetPassword() {
             },
             body:JSON.stringify({email})
          })
+setEmail("")
+alert("Email sent successfully🎉")
     }
   return (
-    <div>
-        <h1>enter your mail</h1>
-        <input  onChange={(e)=>setEmail(e.target.value)} value={email}   />
-        <button onClick={sendLink}>send</button>
+    <>      <NavBar />
+    <div className={style.main}>
+
+      <div className={style.container}>
+      <img src={Image} alt='Email'/>
+      <h1>Enter your mail</h1>
+        <input  onChange={(e)=>setEmail(e.target.value)} value={email}  placeholder='Enter your email here'  />
+        <button onClick={sendLink}>Send</button>
+      </div>
+   
     </div>
+    </>
   )
 }
 

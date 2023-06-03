@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import style from "./Signin.module.css"
 import { useNavigate } from 'react-router-dom';
 import NavBar from '../../component/NavBar/NavBar';
+import { Link } from 'react-router-dom';
 
 
 function Signin() {
@@ -14,12 +15,6 @@ function Signin() {
 
 const navigate = useNavigate()
 
-    function NavigateToSignup(){
-      navigate("/Signup")
-  }
-function NavigateToForgetPassword(){
-  navigate("/ResetPassword")
-}
     async function submit(e){
       e.preventDefault();
       try{
@@ -67,9 +62,9 @@ function NavigateToForgetPassword(){
         Login
       </Button>
       <br/>
-      <h6 className={style .Regis} onClick={NavigateToSignup}>Register</h6>
+      <Link to={"/Signup"}><h6 className={style .Regis} >Register</h6></Link>
       <br/>
-      <h6 className={style .Regis} onClick={NavigateToForgetPassword}>ForgetPassword</h6>
+      <Link to={"/ResetPassword"}> <h6 className={style .Regis} >ForgetPassword</h6></Link>
     </Form>
     </div>
     </>

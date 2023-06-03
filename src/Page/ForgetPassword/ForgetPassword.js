@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import style from "./ForgetPassword.module.css"
 import { useNavigate, useParams } from 'react-router-dom'
+import NavBar from '../../component/NavBar/NavBar'
+import Image from "../../Image/fingerprint.gif"
 
 const ForgetPassword = () => {
   const  [password,setPassword]=useState("")
@@ -44,17 +46,20 @@ const navigate=useNavigate()
     }
   }
   return (
-    <div className={style.container}>
-    <form onSubmit={updatePassword} >
-    
+    <>
+    <NavBar />
+    <div className={style.main}>
+    <form className={style.container} onSubmit={updatePassword} >
+    <img src={Image} alt='image'/>
       <h2>Enter Your New Password </h2>
         <input type='password'
         value={password}
         onChange={(e)=>setPassword(e.target.value)}
         placeholder='Enter your new password ' autoComplete='off'/>
-        <button type='submit'>Send</button>
+        <button type='submit'>Submit</button>
     </form>
 </div>
+</>
   )
 }
 
