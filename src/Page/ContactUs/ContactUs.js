@@ -13,7 +13,6 @@ function ContactUs() {
     <div className={style.main} >
         <NavBar />
       <div className={style.box1}>
-        <h1>Contact Us</h1>
         <div className={style.data}>
             <img src={location} alt='location' />
             <div>
