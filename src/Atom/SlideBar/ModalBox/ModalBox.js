@@ -35,7 +35,7 @@ export default function ModalBox() {
           <Typography id="modal-modal-title" variant="h6" component="h2">
            Fill the Form for Enquiry
           </Typography>
-          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+          <Typography id="modal-modal-description" sx={{ mt: 3 }}>
             <div className={styles.container}>
             <input placeholder='Name' type='text'/>
             <input placeholder='Email'  type='email'/>
