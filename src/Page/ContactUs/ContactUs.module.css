@@ -55,7 +55,10 @@
     .box1 button{
         font-size: small;
     }
-  
+    .box1{
+        align-items: center;
+    }
+
 }
 .data img{
     height: 4rem;
