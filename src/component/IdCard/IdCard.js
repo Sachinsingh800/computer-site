@@ -5,21 +5,29 @@ import React, { useRef } from 'react';
 import html2canvas from 'html2canvas';
 import { jsPDF } from 'jspdf';
 
+
 function IdCard() {
-  const myDivRef = useRef(null);
+  const pdfRef = useRef();
+
+
+
   const handleDownload = () => {
-    const element = document.getElementById('myDiv');
-    
-    html2canvas(element).then((canvas) => {
+      
+    const input = pdfRef.current;
+    html2canvas(input).then((canvas)=>{
       const imgData = canvas.toDataURL('image/png');
-      const pdf = new jsPDF();
-      const imgProps = pdf.getImageProperties(imgData);
-      const pdfWidth = pdf.internal.pageSize.getWidth();
-      const pdfHeight = (imgProps.height * pdfWidth) / imgProps.width;
-  
-      pdf.addImage(imgData, 'PNG', 0, 0, pdfWidth, pdfHeight);
-      pdf.save('myPage.pdf');
-    });
+      const pdf = new jsPDF("p","mm","a4",true);
+      const pdfWidth=pdf.internal.pageSize.getWidth();
+      const pdfHeight = pdf.internal.pageSize.getHeight();
+      const imgWidth = canvas.width;
+      const imgHeight = canvas.height;
+      const ratio = Math.min(pdfWidth/imgWidth, pdfHeight/imgHeight);
+      const imgX = (pdfWidth - imgWidth * ratio) /2;
+      const imgY=30;
+      pdf.addImage(imgData, "PNG",imgX, imgY, imgWidth*ratio, imgHeight * ratio);
+      pdf.save("demo.pdf")
+    })
+
   };
   
 
@@ -28,7 +36,7 @@ function IdCard() {
     let user = JSON.parse(localStorage.getItem("userData"));
   return (
     <div className={style.main} >
-        <div className={style.container} ref={myDivRef} id="myDiv">
+        <div className={style.container} ref={pdfRef} id="myDiv">
     <div className={style.box1}>
       <img  className={style.img}  src={`https://server-bu32.onrender.com/api/userImages/${user?.studentData?.image}`} alt='dp' />
       <h4>{user?.studentData?.name}</h4>
