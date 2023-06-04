@@ -36,7 +36,7 @@ function navigateToProfile(){
         </li>
 
         <li className={style.dropdown}>
-          <a href="#">Course <span className={style.character}>	&#11165;</span></a>
+          <a>Course <span className={style.character}>	&#11165;</span></a>
           <ul className={style.dropdown_content}>
             <li>
               <a href="/Javascript">Javascript</a>
@@ -80,9 +80,6 @@ function navigateToProfile(){
       
         </li>
 
-        <li>
-          <a href="#">Download</a>
-        </li>
 
         <li>
           <a href="#">Faculties</a>
