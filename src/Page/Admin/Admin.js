@@ -22,7 +22,7 @@ export  default function  Admin() {
            if(data.userData.is_admin===1){
              alert(data.message)
              localStorage.setItem("AdminData",JSON.stringify(data))
-             localStorage.setItem("Admin",JSON.stringify(data.userData.is_admin))
+             localStorage.setItem("Admin",JSON.stringify({Admin:true}))
 
              navigate('/DashBoard')
            }else{

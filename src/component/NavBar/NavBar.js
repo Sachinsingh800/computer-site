@@ -11,7 +11,7 @@ function NavBar() {
   const navigate = useNavigate()
   const [show,setShow] = useState(JSON.parse(localStorage.getItem("verified") || false)) 
   const [Admin,setAdmin] = useState(JSON.parse(localStorage.getItem("Admin") || false)) 
-console.log(Admin)
+console.log(Admin.Admin)
   function logout(){
     localStorage.clear()
     navigate("/Signin")
@@ -82,7 +82,7 @@ function navigateToProfile(){
           <a href="/ContactUs">Contact</a>
       
         </li>
-        {Admin===1 ?  <li className={style.dropdown}>
+        {Admin.Admin ?  <li className={style.dropdown}>
           <a href="/DashBoard">DashBoard</a>
       
         </li>: null }
@@ -91,7 +91,7 @@ function navigateToProfile(){
         <li className={style.dropdown}>
           <a>Facultie<span className={style.character}>	&#11165;</span></a>
           <ul className={style.dropdown_content}>
-          {Admin===1 ?  <li className={style.dropdown}>
+          {Admin.Admin ?  <li className={style.dropdown}>
           <h6 onClick={logout} >Admin Signout</h6>
         </li>: <a href="/Admin">Admin SignIn</a> }
           </ul>
@@ -117,7 +117,7 @@ function navigateToProfile(){
          
   
       </>
-      :  <span onClick={navigateToSignin}>Signin</span>
+      :  <span  onClick={navigateToSignin}>Signin</span>
        }
        </div> : 
           <div>
@@ -140,7 +140,7 @@ function navigateToProfile(){
          
   
       </>
-      :  <span onClick={navigateToSignin}>Signin</span>
+      :  <span hidden={Admin.Admin} onClick={navigateToSignin}>Signin</span>
        }
        </div>
           }
