@@ -27,6 +27,7 @@
   width: 8rem;
   border-radius: 50%;
   background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .rightBar{
     width: 40rem;
