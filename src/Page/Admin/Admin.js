@@ -22,17 +22,19 @@ export  default function  Admin() {
            if(data.userData.is_admin===1){
              alert(data.message)
              localStorage.setItem("AdminData",JSON.stringify(data))
-             localStorage.setItem("Admin",JSON.stringify({Admin:true}))
+             localStorage.setItem("Admin",JSON.stringify(data.userData.is_admin))
 
              navigate('/DashBoard')
            }else{
-             alert(data.message)
+            //  alert(data.message)
+             alert("wrong password")
            }
            
         }catch(error){
          console.log(error.message)
+      
         }
-  
+       
    }  
   return (
     <>
