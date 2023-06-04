@@ -83,7 +83,7 @@ function navigateToProfile(){
       
         </li>
         {Admin.Admin ?  <li className={style.dropdown}>
-          <a href="/DashBoard">DashBoard</a>
+          <a href="/DashBoard">Dashboard</a>
       
         </li>: null }
       
