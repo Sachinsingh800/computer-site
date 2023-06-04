@@ -5,19 +5,19 @@ import CourseVideo from '../../Atom/SlideBar/CourseVideo'
 import { GalleryData } from '../../Atom/SlideBar/GalleryData'
 
 function Gallery() {
-    const [search,setSearch] = useState(" ")
-    console.log(GalleryData)
+    const [search,setSearch] = useState("")
+
   return (
     <>
        <NavBar/>
     <div className={style.main}>
-        <input className={style.inputBox} placeholder='search here....' value={search} onChange={(e)=>setSearch(e.target.value)} />
+        <input className={style.inputBox} placeholder='search here....'  value={search} onChange={(e)=>setSearch(e.target.value)} />
          <CourseVideo />
       <h1>Gallery</h1>
       <div className={style.PodcastBox}>
         {GalleryData
          .filter((elem) => {
-            return elem.url.toLowerCase().includes(search.toLowerCase());
+            return elem?.url.toLowerCase().includes(search.toLowerCase());
           }).
         map((item, i) => (
           <div key={i} className={style.podcast}>
