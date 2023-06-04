@@ -10,8 +10,10 @@ import mail from "../../Image/mail.gif"
 
 function ContactUs() {
   return (
+    <>
+      <NavBar />
     <div className={style.main} >
-        <NavBar />
+      
       <div className={style.box1}>
         <div className={style.data}>
             <img src={location} alt='location' />
@@ -42,6 +44,7 @@ function ContactUs() {
       </div>
     
     </div>
+    </>
   )
 }
 
