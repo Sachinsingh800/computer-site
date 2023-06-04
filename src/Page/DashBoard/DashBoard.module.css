@@ -49,7 +49,7 @@
 
 }
 .box{
-    margin-top: 29rem;
+    margin-top: 27rem;
 }
 .inputBox{
     position: absolute;
@@ -62,4 +62,7 @@
     padding: 0rem 3rem 0rem 3rem;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     border-radius: 20px;
+}
+.infoBox::-webkit-scrollbar{
+    display: none;
 }
