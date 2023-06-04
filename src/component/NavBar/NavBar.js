@@ -6,6 +6,8 @@ import TemporaryDrawer from "../../Atom/SlideBar/TemporaryDrawer";
 function NavBar() {
   const user=JSON.parse(localStorage.getItem("user"))
   const User=JSON.parse(localStorage.getItem("userData"))
+  const AdminData=JSON.parse(localStorage.getItem("AdminData"))
+
   const navigate = useNavigate()
   const [show,setShow] = useState(JSON.parse(localStorage.getItem("verified") || false)) 
   const [Admin,setAdmin] = useState(JSON.parse(localStorage.getItem("Admin") || false)) 
@@ -84,14 +86,14 @@ function navigateToProfile(){
           <a href="/DashBoard">DashBoard</a>
       
         </li>: null }
-       
+      
 
         <li className={style.dropdown}>
           <a>Facultie<span className={style.character}>	&#11165;</span></a>
           <ul className={style.dropdown_content}>
-            <li>
-              <a href="/Admin">Admin login</a>
-            </li>
+          {Admin ?  <li className={style.dropdown}>
+          <h6 onClick={logout} >Admin Signout</h6>
+        </li>: <a href="/Admin">Admin SignIn</a> }
           </ul>
         </li>
         <li>

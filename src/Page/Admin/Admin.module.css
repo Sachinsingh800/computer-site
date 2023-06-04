@@ -4,7 +4,7 @@
     justify-content: center;
     height: 100vh;
     flex-direction: column;
-    background-image: url("https://e1.pxfuel.com/desktop-wallpaper/999/339/desktop-wallpaper-computer-backgrounds-suhu-computer-science-backgrounds.jpg");
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/922/804/907/light-laptop-notebook-lighting-wallpaper-preview.jpg");
     background-size: cover;
 }
 .form{
@@ -12,7 +12,11 @@
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
     backdrop-filter: blur(8px);
     border-radius: 20px;
-    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: white;
+    text-align: center;
 }
 .navBar{
     width: 100vw;
@@ -47,8 +51,27 @@
     } 
   
     .Regis{
-        position: absolute;
-        margin-left: 14rem;
-        margin-top: -2rem;
-        color: blue;
+        color: rgb(255, 255, 255);
+    }
+    .form input{
+        border: none;
+        outline: none;
+        height: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        width: 20rem;
+    }
+    .form button{
+        width: 10rem;
+        height: 3rem;
+        border-radius: 15px;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        background-color: blue;
+        color: white;
+        border: none;
+        font-size: large;
+        font-weight: 700;
+    }
+    .form button:hover{
+        background-color: green;
     }

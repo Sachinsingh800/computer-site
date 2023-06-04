@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import style from './Admin.module.css'
 import { Link,useNavigate } from 'react-router-dom'
+import NavBar from '../../component/NavBar/NavBar'
 
 export  default function  Admin() {
     const [email,setEmail]=useState("")
@@ -20,7 +21,7 @@ export  default function  Admin() {
       
            if(data.userData.is_admin===1){
              alert(data.message)
-             localStorage.setItem("User",JSON.stringify(data))
+             localStorage.setItem("AdminData",JSON.stringify(data))
              localStorage.setItem("Admin",JSON.stringify({Admin:true}))
 
              navigate('/DashBoard')
@@ -34,8 +35,11 @@ export  default function  Admin() {
   
    }  
   return (
-    <div className={style.container}>
-    <form onSubmit={submitForm} >
+    <>
+        <NavBar/>
+    <div className={style.main}>
+  
+    <form className={style.form} onSubmit={submitForm} >
     
       <h2>Admin SignIn</h2>
         <input type='email'
@@ -46,9 +50,10 @@ export  default function  Admin() {
         value={password}
         onChange={(e)=>setPassword(e.target.value)}
         placeholder='Enter your password ' autoComplete='off'/>
-        <button type='submit'>Sign Up</button>
-        <Link to="/register">If you don't have acoount ? Register</Link>
+        <button type='submit'>Sign In</button>
+        <Link className={style.Regis} to="/register">Forgot Password??</Link>
     </form>
 </div>
+</>
   )
 }
