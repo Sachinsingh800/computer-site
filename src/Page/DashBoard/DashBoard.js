@@ -55,6 +55,7 @@ function DashBoard() {
               <img className={style.img}
         src={`https://server-bu32.onrender.com/api/userImages/${item.image}`}
       />
+      <br/>
       <h3>Name:<span>{item.name}</span></h3>
       <h3>email:<span>{item.email}</span></h3>
       <h3>Dob:<span>{item.dob}</span></h3>
