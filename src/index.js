@@ -25,6 +25,8 @@ import ResetPassword from './Page/ResetPassword/ResetPassword';
 import AboutUs from './Page/AboutUs/AboutUs';
 import Gallery from './Page/Gallery/Gallery';
 import ContactUs from './Page/ContactUs/ContactUs';
+import Admin from './Page/Admin/Admin';
+import DashBoard from './Page/DashBoard/DashBoard';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createBrowserRouter([
@@ -99,6 +101,14 @@ const router = createBrowserRouter([
   {
     path: '/Gallery',
     element: <Gallery />,
+  },
+  {
+    path: '/Admin',
+    element: <Admin />,
+  },
+  {
+    path: '/DashBoard',
+    element: <DashBoard />,
   },
 ]);
 root.render(

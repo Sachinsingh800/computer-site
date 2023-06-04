@@ -8,6 +8,7 @@ function NavBar() {
   const User=JSON.parse(localStorage.getItem("userData"))
   const navigate = useNavigate()
   const [show,setShow] = useState(JSON.parse(localStorage.getItem("verified") || false)) 
+  const [Admin,setAdmin] = useState(JSON.parse(localStorage.getItem("Admin") || false)) 
 
   function logout(){
     localStorage.clear()
@@ -79,10 +80,19 @@ function navigateToProfile(){
           <a href="/ContactUs">Contact</a>
       
         </li>
+        {Admin ?  <li className={style.dropdown}>
+          <a href="/DashBoard">DashBoard</a>
+      
+        </li>: null }
+       
 
-
-        <li>
-          <a href="#">Faculties</a>
+        <li className={style.dropdown}>
+          <a>Facultie<span className={style.character}>	&#11165;</span></a>
+          <ul className={style.dropdown_content}>
+            <li>
+              <a href="/Admin">Admin login</a>
+            </li>
+          </ul>
         </li>
         <li>
           {show ?          <div>
