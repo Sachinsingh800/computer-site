@@ -59,3 +59,22 @@
 .infoBox::-webkit-scrollbar{
     display: none;
 }
+@media (max-width:1151px){
+    .rightBar{
+     width: 30rem;
+     padding-top: 20rem;
+    }
+    .inputBox{
+        width: 15rem;
+    }
+}
+@media (max-width:711px){
+    .rightBar{
+        display: none;
+    }
+}
+@media (max-width:711px){
+    .container h3{
+        width: 30rem;
+    }
+}
