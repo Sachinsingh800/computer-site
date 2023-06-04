@@ -40,16 +40,9 @@
 .infoBox{
     border-left: 1px rgb(255, 255, 255) solid;
     display: flex;
-    padding-top: 30rem;
-    align-items: center;
     flex-direction: column;
-    justify-content: center;
     width: 100vw;
     overflow-y: scroll;
-
-}
-.box{
-    margin-top: 27rem;
 }
 .inputBox{
     position: absolute;
