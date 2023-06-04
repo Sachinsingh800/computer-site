@@ -124,7 +124,7 @@ function navigateToProfile(){
           {
             user ?  
             <>
-                 <li className={style.dropdown}>
+                 <li className={style.dropdown} hidden={Admin.Admin} >
                  <img  className={style.userImg}
               src={`https://server-bu32.onrender.com/api/userImages/${user?.userData?.image}`}
             />
