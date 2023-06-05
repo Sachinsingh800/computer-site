@@ -4,11 +4,11 @@ import style from "./Graph.module.css"
 
 export const data = [
   ["Task", "Hours per Day"],
-  ["Work", 11],
-  ["Eat", 2],
-  ["Commute", 2],
-  ["Watch TV", 2],
-  ["Sleep", 7],
+  ["Project", 21],
+  ["Classes", 2],
+  ["Test", 2],
+  ["assignment", 2],
+  ["Active", 7],
 ];
 
 export const options = {
