@@ -42,7 +42,6 @@ export  function StudentDetails({search}) {
   <h3>Dob:<span>{item.dob}</span></h3>
   <h3>Father Name:<span>{item.fatherName}</span></h3>
   <h3>Mother Name:<span>{item.motherName}</span></h3>
-  <h3>Dob:<span>{item.dob}</span></h3>
   <h3>course:<span>{item.course}</span></h3>
   <h3>Gender:<span>{item.gender}</span></h3>
   <h3>Address:<span>{item.address}</span></h3>
