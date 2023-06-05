@@ -1,6 +1,8 @@
 import React ,{useState ,useEffect} from 'react'
 import style from "./DashBoardPages.module.css"
 import axios from 'axios';
+import { CourseData } from '../../Atom/SlideBar/CoursesData/CoursesData';
+import Graph from '../../Atom/SlideBar/Graph/Graph';
 
 export  function StudentDetails({search}) {
     const [data,setData] = useState([])
@@ -60,25 +62,67 @@ export  function Courses() {
  
   return (
     <div className={style.box}>
-          <div className={style.container}>
-          <h1>Courses</h1>
-          </div>
-         
+        {CourseData.map((item)=>
+        
+        <div className={style.container}>
+        <h1>{item.name}</h1>
+        <h3>{item.para}</h3>
+        </div>
+        
+        )}
+               
   </div>
   )
 }
 
-export  function Results() {
- 
+export  function Results({search}) {
+    const [data,setData] = useState([])
+   
+    async function getData(){
+        try {
+          const res = await axios.get(
+            "https://server-bu32.onrender.com/api/getFrom"
+    
+          );
+         setData(res.data.userinfo)
+        } catch (error) {
+          console.log(error.message);
+        }
+      }
+    
+    
+      useEffect(()=>{
+        getData()
+      },[])
+    
   return (
     <div className={style.box}>
-         <div className={style.container}>
-         <h1>Result</h1>
-         </div>
-       
+         
+    {data
+    //   .filter((elem) => {
+    //     return elem?.name.toLowerCase().includes(search.toLowerCase());
+    //   })
+    .map((item)=>
+  <div className={style.container}>
+          <img className={style.img}
+    src={`https://server-bu32.onrender.com/api/userImages/${item.image}`}
+  />
+  <br/>
+
+  <h3>Name:<span>{item.name}</span></h3>
+  <h3>email:<span>{item.email}</span></h3>
+  <h3>Dob:<span>{item.dob}</span></h3>
+  <h3>course:<span>{item.course}</span></h3>
+  <h3 className={style.Graph}> <Graph /></h3>
+
+      
+  </div>
+
+  )}
   </div>
   )
 }
+
 
 export  function Certificate() {
  

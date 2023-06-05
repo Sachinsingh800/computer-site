@@ -48,6 +48,9 @@
     width: 100vw;
     overflow-y: scroll;
 }
+.Graph{
+  z-index: 9999;
+}
 .inputBox{
     position: absolute;
     z-index: 99;
