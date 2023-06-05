@@ -5,6 +5,7 @@ import { CourseData } from '../../Atom/SlideBar/CoursesData/CoursesData';
 import Graph from '../../Atom/SlideBar/Graph/Graph';
 
 export  function StudentDetails({search}) {
+  
     const [data,setData] = useState([])
    
     async function getData(){
@@ -75,8 +76,13 @@ export  function Courses() {
   )
 }
 
+
+
+
+
 export  function Results({search}) {
     const [data,setData] = useState([])
+ 
    
     async function getData(){
         try {
@@ -100,7 +106,7 @@ export  function Results({search}) {
          
     {data
     //   .filter((elem) => {
-    //     return elem?.name.toLowerCase().includes(search.toLowerCase());
+    //     return elem?.name.toLowerCase().includes(Search.toLowerCase());
     //   })
     .map((item)=>
   <div className={style.container}>

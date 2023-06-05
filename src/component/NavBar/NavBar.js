@@ -11,7 +11,7 @@ function NavBar() {
   const navigate = useNavigate()
   const [show,setShow] = useState(JSON.parse(localStorage.getItem("verified") || false)) 
   const [Admin,setAdmin] = useState(JSON.parse(localStorage.getItem("Admin") || false)) 
-console.log(Admin.Admin)
+
   function logout(){
     localStorage.clear()
     navigate("/Signin")
