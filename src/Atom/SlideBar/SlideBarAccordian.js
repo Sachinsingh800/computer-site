@@ -4,6 +4,7 @@ import {BiBook } from 'react-icons/bi';
 import {IoIosWoman } from 'react-icons/io';
 import {HiUserGroup} from 'react-icons/hi';
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 
 
@@ -57,10 +58,12 @@ export function StudentSlideBarAccordian() {
 
 
 export function FacultiesSlideBarAccordian() {
+  const navigate= useNavigate()
   const [Admin,setAdmin] = useState(JSON.parse(localStorage.getItem("Admin") || false)) 
 
   function removeData(){
     localStorage.clear()
+    navigate("/")
   }
   return (
     <Accordion defaultActiveKey="0">

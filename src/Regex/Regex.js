@@ -8,7 +8,7 @@ exports.isValidString = function (value) {
   };
   
   exports.isValidEmailSyntax = (email) => {
-    return /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email);
+    return /^[a-z0-9]+(?!.*(?:\+{2,}|\-{2,}|\.{2,}))(?:[\.+\-]{0,1}[a-z0-9])*@gmail\.com$/.test(email);
   };
   
   exports.isOnlyLetters = (str) => {

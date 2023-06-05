@@ -8,6 +8,13 @@ import { useNavigate } from 'react-router-dom';
 import style from './StudentForm.module.css'
 import NavBar from '../NavBar/NavBar';
 import  axios from 'axios';
+import {
+  isValidEmailSyntax,
+  isValidMobile,
+  isOnlyLetters,
+  isValidString,
+  isValidPassword,
+} from '../../Regex/Regex';
 
 
 
@@ -34,6 +41,35 @@ export default function StudentForm() {
   const handleSubmit = async (e) => {
     
     e.preventDefault();
+
+
+    if (!isValidString(name)) {
+      alert('Give correct namel');
+      return;
+    }
+    if (!isValidEmailSyntax(email)) {
+      alert('Give correct email');
+      return;
+    }
+ 
+    if (!isValidMobile(mobile)) {
+      alert('Give correct mobile');
+      return;
+    }
+    if (!isValidString(fatherName)) {
+      alert('Give correct father Name');
+      return;
+    }
+    if (!isValidString(motherName)) {
+      alert('Give correct Mother Name');
+      return;
+    }
+    if (!isValidMobile(parentContact)) {
+      alert('Give correct Parent No');
+      return;
+    }
+
+
     const formData = new FormData();
     formData.append("image", image);
     formData.append("name", name);
@@ -78,6 +114,7 @@ export default function StudentForm() {
             onChange={(e)=>setName(e.target.value)}
             name='name'
             value={name}
+            maxlength = "30"
           />
           <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
         </Form.Group>
@@ -90,6 +127,7 @@ export default function StudentForm() {
             onChange={(e)=>setEmail(e.target.value)}
             name='email'
             value={email}
+            maxlength = "30"
           />
           <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
         </Form.Group>
@@ -103,6 +141,7 @@ export default function StudentForm() {
               onChange={(e)=>setMobile(e.target.value)}
               name='mobile'
               value={mobile}
+              maxlength = "10"
             />
           </InputGroup>
         </Form.Group>
@@ -119,6 +158,7 @@ export default function StudentForm() {
               name='parentContact'
               value={parentContact}
               required
+              maxlength = "10"
             />
           </InputGroup>
         </Form.Group>
@@ -188,6 +228,7 @@ export default function StudentForm() {
             onChange={(e)=>setAdhareNo(e.target.value)}
             name='adharNo'
             value={adharNo}
+            maxlength = "12"
           />
           <Form.Control.Feedback type="invalid">
             Please provide a valid state.
@@ -202,6 +243,7 @@ export default function StudentForm() {
             onChange={(e)=>setAddress(e.target.value)}
             name='address'
             value={address}
+            maxlength = "50"
           />
           <Form.Control.Feedback type="invalid">
             Please provide a valid city.
@@ -214,6 +256,7 @@ export default function StudentForm() {
             onChange={(e)=>setFatherName(e.target.value)}
             name='fatherName'
             value={fatherName}
+            maxlength = "30"
           />
         </Form.Group>
         <Form.Group as={Col} md="3" controlId="validationCustom05">
@@ -222,6 +265,7 @@ export default function StudentForm() {
            onChange={(e)=>setMotherName(e.target.value)}
            name='motherName'
            value={motherName}
+           maxlength = "30"
           />
         </Form.Group>
 
