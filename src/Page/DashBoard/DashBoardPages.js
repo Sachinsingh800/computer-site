@@ -38,15 +38,15 @@ export  function StudentDetails({search}) {
   />
   <br/>
   <h3>Name:<span>{item.name}</span></h3>
-  <h3>email:<span>{item.email}</span></h3>
+  <h3>Email:<span>{item.email}</span></h3>
   <h3>Dob:<span>{item.dob}</span></h3>
   <h3>Father Name:<span>{item.fatherName}</span></h3>
   <h3>Mother Name:<span>{item.motherName}</span></h3>
-  <h3>course:<span>{item.course}</span></h3>
+  <h3>Course:<span>{item.course}</span></h3>
   <h3>Gender:<span>{item.gender}</span></h3>
   <h3>Address:<span>{item.address}</span></h3>
   <h3>Adhar No:<span>{item.adharNo}</span></h3>
-  <h3>mobile:<span>{item.mobile}</span></h3>
+  <h3>Mobile:<span>{item.mobile}</span></h3>
   <h3>Parent Contact No:<span>{item.parentContact}</span></h3>
       
   </div>
