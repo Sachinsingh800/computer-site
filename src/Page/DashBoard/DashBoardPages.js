@@ -3,10 +3,16 @@ import style from "./DashBoardPages.module.css"
 import axios from 'axios';
 import { CourseData } from '../../Atom/SlideBar/CoursesData/CoursesData';
 import Graph from '../../Atom/SlideBar/Graph/Graph';
+import { AiFillDelete } from 'react-icons/ai';
+import { BiEdit } from 'react-icons/bi';
+import { Link } from 'react-router-dom';
 
 export  function StudentDetails({search}) {
   
     const [data,setData] = useState([])
+
+
+
    
     async function getData(){
         try {
@@ -24,15 +30,34 @@ export  function StudentDetails({search}) {
       useEffect(()=>{
         getData()
       },[])
+
+
+      async  function DeleteStudent(id){
+        const respone=await fetch(`https://server-bu32.onrender.com/api/delete/${id}`,{
+         method:"delete"
+        })
+        const newData=await respone.json()
+        if(newData){
+          getData()
+        }
+     }
+     
+
+
     
   return (
     <div className={style.box}>
+      
     {data
       .filter((elem) => {
         return elem?.name.toLowerCase().includes(search.toLowerCase());
       })
     .map((item)=>
-  <div className={style.container}>
+  <div key={item._id} className={style.container}>
+    <div className={style.buttons}>
+      <Link to={"/UpdateStudentData/" + item._id}><button><BiEdit /></button></Link>
+      <button onClick={()=>DeleteStudent(item._id)}><AiFillDelete/></button>
+    </div>
           <img className={style.img}
     src={`https://server-bu32.onrender.com/api/userImages/${item.image}`}
   />

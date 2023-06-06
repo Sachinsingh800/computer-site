@@ -4,7 +4,7 @@ import style from "./Graph.module.css"
 
 export const data = [
   ["Task", "Hours per Day"],
-  ["Project", 21],
+  ["Project", 1],
   ["Classes", 2],
   ["Test", 2],
   ["assignment", 2],

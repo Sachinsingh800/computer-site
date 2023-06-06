@@ -66,6 +66,19 @@
 .infoBox::-webkit-scrollbar{
     display: none;
 }
+.buttons{
+    position: absolute;
+    top: 5%;
+    right: 2%;
+    display: flex;
+    gap: 1rem;
+}
+.buttons button{
+  color: white;
+  background-color: transparent;
+  border: none;
+  font-size: large;
+}
 @media (max-width:1151px){
     .rightBar{
      width: 30rem;

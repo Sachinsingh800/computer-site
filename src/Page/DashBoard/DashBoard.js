@@ -47,7 +47,6 @@ function getId(id){
         </div>
         )}
         </div>
-
         <div className={style.infoBox}>
          {Pages[id]}
         </div>

@@ -27,6 +27,7 @@ import Gallery from './Page/Gallery/Gallery';
 import ContactUs from './Page/ContactUs/ContactUs';
 import Admin from './Page/Admin/Admin';
 import DashBoard from './Page/DashBoard/DashBoard';
+import UpdateStudentData from './component/UpdateStudentData/UpdateStudentData';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createBrowserRouter([
@@ -109,6 +110,10 @@ const router = createBrowserRouter([
   {
     path: '/DashBoard',
     element: <DashBoard />,
+  },
+  {
+    path: '/UpdateStudentData/:id',
+    element: <UpdateStudentData />,
   },
 ]);
 root.render(
