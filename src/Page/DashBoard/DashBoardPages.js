@@ -47,7 +47,6 @@ export  function StudentDetails({search}) {
     
   return (
     <div className={style.box}>
-      
     {data
       .filter((elem) => {
         return elem?.name.toLowerCase().includes(search.toLowerCase());
@@ -59,7 +58,7 @@ export  function StudentDetails({search}) {
       <button onClick={()=>DeleteStudent(item._id)}><AiFillDelete/></button>
     </div>
           <img className={style.img}
-    src={`https://server-bu32.onrender.com/api/userImages/${item.image}`}
+    src={item.image}
   />
   <br/>
   <h3>Name:<span>{item.name}</span></h3>
