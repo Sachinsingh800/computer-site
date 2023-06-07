@@ -74,6 +74,26 @@
 }
 @media (max-width:711px){
     .rightBar{
+        width: 100%;
+        margin-left: 6rem;
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        max-height: 1rem;
+        position: fixed;
+        z-index: 999;
+        padding: 1rem;
+    }
+    .setRightbox{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .rightBar input{
+        display: none;
+
+    }
+    .rightBar h3{
         display: none;
     }
 }

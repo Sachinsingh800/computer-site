@@ -42,7 +42,7 @@ function getId(id){
     <input className={style.inputBox} placeholder='Search student here....'  value={search} onChange={(e)=>setSearch(e.target.value)} />
             <h3>My Dashboard</h3>
         {PagesName.map((item ,index )=>
-        <div key={index}>
+        <div key={index} className={style.setRightbox}>
         <h4  onClick={()=>getId(index)}>{item}</h4>
         </div>
         )}
