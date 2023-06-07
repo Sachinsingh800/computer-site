@@ -38,6 +38,32 @@ export default function StudentForm() {
   const [course, setCourse] = useState("");
 
 
+
+
+  const handleChange = (event) => {
+    const inputValue = event.target.value;
+    if (inputValue.length <= 10) {
+      setMobile(inputValue);
+    }
+  };
+  const handleChange2 = (event) => {
+    const inputValue = event.target.value;
+    if (inputValue.length <= 10) {
+      setParentContact(inputValue);
+    }
+  };
+  const handleChange3 = (event) => {
+    const inputValue = event.target.value;
+    if (inputValue.length <= 12) {
+      setAdhareNo(inputValue);
+    }
+  };
+
+
+
+
+
+
   const handleSubmit = async (e) => {
     
     e.preventDefault();
@@ -99,6 +125,9 @@ export default function StudentForm() {
   }
 
 
+
+
+
   return (
     <>
     <NavBar />
@@ -138,10 +167,11 @@ export default function StudentForm() {
               type="number"
               placeholder="Number"
               required
-              onChange={(e)=>setMobile(e.target.value)}
+              onChange={handleChange}
               name='mobile'
               value={mobile}
               maxlength = "10"
+
             />
           </InputGroup>
         </Form.Group>
@@ -154,7 +184,7 @@ export default function StudentForm() {
             <Form.Control
               type="number"
               placeholder="Number"
-              onChange={(e)=>setParentContact(e.target.value)}
+              onChange={handleChange2}
               name='parentContact'
               value={parentContact}
               required
@@ -224,11 +254,10 @@ export default function StudentForm() {
 
         <Form.Group as={Col} md="2" controlId="validationCustom04">
           <Form.Label style={{color:"white"}}>Adhaar No</Form.Label>
-          <Form.Control type="text" placeholder="Adhaar No" required 
-            onChange={(e)=>setAdhareNo(e.target.value)}
+          <Form.Control type="number" placeholder="Adhaar No" required 
+            onChange={handleChange3}
             name='adharNo'
             value={adharNo}
-            maxlength = "12"
           />
           <Form.Control.Feedback type="invalid">
             Please provide a valid state.
