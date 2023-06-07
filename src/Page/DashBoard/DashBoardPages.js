@@ -134,7 +134,7 @@ export  function Results({search}) {
     .map((item)=>
   <div className={style.container}>
           <img className={style.img}
-    src={`https://server-bu32.onrender.com/api/userImages/${item.image}`}
+    src={item.image}
   />
   <br/>
 
