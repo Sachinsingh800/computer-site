@@ -19,7 +19,6 @@ import {
 } from '../../Regex/Regex';
 
 
-
 export default function UpdateStudentData() {
 const params=useParams()
   const [validated, setValidated] = useState(false);
