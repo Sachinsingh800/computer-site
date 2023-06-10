@@ -4,6 +4,8 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import styles from "./ModalBox.module.css"
+import { useState } from 'react';
+import axios from 'axios';
 
 const style = {
   position: 'absolute',
@@ -21,6 +23,26 @@ export default function ModalBox() {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+  const [name , setName] = useState("")
+  const [email , setEmail] = useState("")
+  const [query , setQuery] = useState("")
+
+
+async function handleSubmit(){
+  try {
+    const res = await axios.post(
+      "https://server-bu32.onrender.com/api/query",{
+        name,
+        email,
+        query
+      }
+    );
+    alert(res.data.message);
+  } catch (error) {
+    console.log(error.message);
+  }
+}
+
 
   return (
     <div>
@@ -37,27 +59,11 @@ export default function ModalBox() {
           </Typography>
           <Typography id="modal-modal-description" sx={{ mt: 3 }}>
             <div className={styles.container}>
-            <input placeholder='Name' type='text'/>
-            <input placeholder='Email'  type='email'/>
-            <select>
-              <option disabled>
-                Higher education
-              </option>
-              <option>
-                Bcom
-              </option>
-              <option>
-                B.tech
-              </option>
-              <option>
-                BCA
-              </option>
-              <option>
-                Aganbadi
-              </option>
-            </select>
-            <textarea placeholder='write your query here.....'  maxlength="50"/>
-            <button>Send</button>
+            <input placeholder='Name' type='text' value={name} name="name" onChange={(e)=>setName(e.target.value)}/>
+            <input placeholder='Email'  type='email' value={email} name="email" onChange={(e)=>setEmail(e.target.value)}/>
+          
+            <textarea placeholder='write your query here.....'  maxlength="50" value={query} name="query" onChange={(e)=>setQuery(e.target.value)}/>
+            <button onClick={handleSubmit}>Send</button>
             </div>
          
           </Typography>

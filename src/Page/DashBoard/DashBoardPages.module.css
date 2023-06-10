@@ -98,3 +98,12 @@
         width: 30rem;
     }
 }
+.querybox{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background-color: black;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    border-radius: 20px;
+}

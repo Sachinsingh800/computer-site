@@ -7,7 +7,7 @@ import { ImMobile, ImOffice } from 'react-icons/im';
 import { MdPayment } from 'react-icons/md';
 import { GoIssueReopened } from 'react-icons/go';
 import {BiSupport } from 'react-icons/bi';
-import { StudentDetails ,Courses,Results,Certificate} from './DashBoardPages';
+import { StudentDetails ,Courses,Results,Query} from './DashBoardPages';
 
 function DashBoard() {
   const [data,setData] = useState([])
@@ -19,14 +19,14 @@ function DashBoard() {
   <StudentDetails  search={search}/>,
   <Courses />,
   <Results/>,
- < Certificate/>
+ < Query/>
 ]
 
 const PagesName=[
   "StudentDetails",
   "Courses",
   "Results",
-  "Certificate"
+  "Querys"
 ]
 
 function getId(id){

@@ -153,12 +153,36 @@ export  function Results({search}) {
 }
 
 
-export  function Certificate() {
- 
+export  function Query() {
+ const [query,setQuery] = useState([])
+  async function getData(){
+    try {
+      const res = await axios.get(
+        "https://server-bu32.onrender.com/api/querydata"
+
+      );
+   setQuery(res.data.userinfo)
+    } catch (error) {
+      console.log(error.message);
+    }
+  }
+
+
+  useEffect(()=>{
+    getData()
+  },[])
+
   return (
     <div className={style.box}>
           <div className={style.container}>
-          <h1>Certificate</h1>
+          <h1>Querys</h1>
+          {query.map((item)=>
+          <div className={style.querybox}>
+          <h4>Name-{item.name}</h4>
+          <h4>Email-{item.email}</h4>
+          <h3>query-{item.query}</h3>
+          </div>
+          )}
           </div>
        
   </div>
