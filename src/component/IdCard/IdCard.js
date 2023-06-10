@@ -30,15 +30,12 @@ function IdCard() {
 
   };
   
-
-
-
     let user = JSON.parse(localStorage.getItem("userData"));
   return (
     <div className={style.main} >
         <div className={style.container} ref={pdfRef} id="myDiv">
     <div className={style.box1}>
-      <img  className={style.img}  src={`https://server-bu32.onrender.com/api/userImages/${user?.studentData?.image}`} alt='dp' />
+      <img  className={style.img}  src={user.studentData.image} alt='dp' />
       <h4>{user?.studentData?.name}</h4>
     </div>
     <div className={style.box2}>

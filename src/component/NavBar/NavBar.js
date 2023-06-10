@@ -103,7 +103,7 @@ function navigateToProfile(){
             <>
                  <li className={style.dropdown}>
                  <img  className={style.userImg}
-            src={`https://server-bu32.onrender.com/api/userImages/${User?.studentData?.image}`}
+            src={User.studentData.image}
             />
           <ul className={style.dropdown_contents}>
             <li>

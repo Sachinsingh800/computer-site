@@ -27,7 +27,7 @@ const VerifiedProfile= () => {
         <img className={style.Profilebg} src="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2017/02/Photoshop-Replace-Background-Featured.jpg" />
       
       <img className={style.img}
-          src={`https://server-bu32.onrender.com/api/userImages/${user?.studentData?.image}`}
+             src={user.studentData.image}
       />
       <div className={style.ProfileData}>
       <h3>My profile</h3>
