@@ -35,74 +35,74 @@ const VerifiedProfile= () => {
   
         <li>
             <div className={style.info}>
-            <h5>Name</h5>
+            <h6>Name</h6>
             {user?.studentData?.name}
             </div>
             </li>
         <li>
             <div className={style.info}>
-            <h5>Gender</h5>
+            <h6>Gender</h6>
             {user?.studentData?.gender}
             </div>
             </li>
         <li>
         <div className={style.info}>
-            <h5>Email id</h5>
+            <h6>Email id</h6>
             {user?.studentData?.email}
             </div>
             </li>
         <li>
         <div className={style.info}>
-            <h5>Phone No</h5>
+            <h6>Phone No</h6>
             {user?.studentData?.mobile}
             </div>
           
             </li>
         <li>
         <div className={style.info}>
-            <h5>Address</h5>
+            <h6>Address</h6>
             {user?.studentData?.address}
             </div>
           
             </li>
         <li>
         <div className={style.info}>
-            <h5>Adhar No</h5>
+            <h6>Adhar No</h6>
             {user?.studentData?.adharNo}
             </div>
           
             </li>
         <li>
         <div className={style.info}>
-            <h5>course</h5>
+            <h6>course</h6>
             {user?.studentData?.course}
             </div>
           
             </li>
         <li>
         <div className={style.info}>
-            <h5>Date of birth</h5>
+            <h6>Date of birth</h6>
             {user?.studentData?.dob}
             </div>
           
             </li>
         <li>
         <div className={style.info}>
-            <h5>Father-Name</h5>
+            <h6>Father-Name</h6>
             {user?.studentData?.fatherName}
             </div>
           
             </li>
         <li>
         <div className={style.info}>
-            <h5>Mother-Name</h5>
+            <h6>Mother-Name</h6>
             {user?.studentData?.motherName}
             </div>
           
             </li>
         <li>
         <div className={style.info}>
-            <h5>Parent Contact No</h5>
+            <h6>Parent Contact No</h6>
             {user?.studentData?.parentContact}
             </div>
           

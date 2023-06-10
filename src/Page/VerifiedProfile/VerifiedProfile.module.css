@@ -1,6 +1,6 @@
 .home{
     background-color: black;
-    height: max-content;
+    height: 100vh;
     color: aliceblue;
     display: flex;
     padding-bottom: 4rem;
@@ -16,7 +16,6 @@
     border: 2px rgb(0, 0, 0) solid;
 }
 .container{
-    /* border: 1px red solid; */
     width: 100%;
     padding-top: 4rem;
     display: flex;
