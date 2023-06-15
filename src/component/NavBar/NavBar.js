@@ -68,9 +68,7 @@ function navigateToProfile(){
             <li>
               <a href="/Signin">Certificate Verfication</a>
             </li>
-            <li>
-              <a href="/IdCard">ID Card</a>
-            </li>
+    
           </ul>
         </li>
 
