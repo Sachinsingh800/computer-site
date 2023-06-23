@@ -5,14 +5,13 @@ import course from "../../Image/course.gif"
 import most from "../../Image/most.gif"
 import time from "../../Image/time.gif"
 import SlideShow from '../../Atom/SlideBar/SlideShow'
-import Demoo from "../../Image/demoo.jpg"
+
 
 
 function HomePage() {
   return (
     <div className={style.main}>
       <SlideShow />
-      <img src={Demoo} />
       <div className={style.footer}>
               <div>
               <img className={style.expert} src={most} alt='Most Recommended'/>
