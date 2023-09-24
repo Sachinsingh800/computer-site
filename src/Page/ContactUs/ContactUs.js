@@ -19,21 +19,21 @@ function ContactUs() {
             <img src={location} alt='location' />
             <div>
                 <h4>Address</h4>
-                <h6>Dhanbad Jharkhand , Kusunda</h6>
+                <h6>Siwan ,Bihar</h6>
             </div>
         </div>
         <div className={style.data}>
             <img src={phone} alt='phone' />
             <div>
                 <h4>Contact No</h4>
-                <h6>7254801625</h6>
+                <h6>7004514938</h6>
             </div>
         </div>
         <div className={style.data}>
             <img src={mail} alt='mail' />
             <div>
                 <h4>Email</h4>
-                <h6>sachinsinghgnc@gmail.com</h6>
+                <h6>Vikesh.667kumar@gmail.com</h6>
             </div>
         </div>
        
